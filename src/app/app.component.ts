@@ -9,4 +9,19 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'bluesky_portfolio';
+
+  scrollto(id:string){
+    const element = document.getElementById(id);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    } else {
+      console.warn(`Element with ID "${id}" not found.`);
+    }
+  }
 }
