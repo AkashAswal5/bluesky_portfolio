@@ -7,6 +7,6 @@ import { TalkComponent } from './talk/talk.component';
 export const routes: Routes = [
     {path:"", component:HomeComponent},
     {path:"features/:solution", loadComponent:() => FeaturesComponent},
-    {path:"talk", loadComponent:()=> TalkComponent},
+    {path:"contact", loadComponent:()=> TalkComponent},
     {path:"**", component:ErrorComponent}
 ];
