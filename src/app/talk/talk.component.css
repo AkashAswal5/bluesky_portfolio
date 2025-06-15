@@ -1,19 +1,13 @@
 .contact-section {
-  min-height: 100vh;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1.5rem;
+  padding: 1.5rem;
 }
 
-.container {
-  max-width: 64rem; /* max-w-4xl */
-  width: 100%;
-}
 
 .title {
-  font-size: 3rem; /* text-5xl */
   font-weight: 800; /* font-extrabold */
   margin-bottom: 1rem;
 }
@@ -33,11 +27,8 @@
 }
 
 .form {
-  background-color: white;
-  padding: 1.5rem;
   border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* shadow-xl */
-  border: 1px solid #e5e7eb;
+  /* border: 1px solid #e5e7eb; */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
