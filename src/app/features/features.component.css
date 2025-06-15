@@ -1,0 +1,24 @@
+html { scroll-behavior: smooth; }
+
+.btn-learn {
+  @apply mt-4 px-5 py-2 rounded-full bg-white bg-opacity-20 text-white font-semibold transition hover:bg-opacity-30;
+}
+.btn-learn:hover { transform: translateY(-2px); }
+
+li::marker {
+  color: rgba(255,255,255,0.85);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section#cyber ul li::marker {
+  color: #ffffffb3;
+}
+
+section#cyber button {
+  transition: transform 0.2s ease-in-out;
+}
+section#cyber button:hover {
+  transform: translateY(-2px);
+}
