@@ -1,0 +1,12 @@
+
+  @keyframes slideY {
+    0% { transform: translateY(0%); }         /* Image 1 */
+    25% { transform: translateY(-100%); }     /* Image 2 */
+    50% { transform: translateY(-200%); }     /* Image 3 */
+    75% { transform: translateY(-300%); }     /* Image 4 */
+    100% { transform: translateY(0%); }       /* Loop back to 1 */
+  }
+
+  .vertical-slider {
+    animation: slideY 40s ease-in-out infinite;
+  }

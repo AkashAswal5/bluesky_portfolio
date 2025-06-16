@@ -1,15 +1,186 @@
-<div class="relative flex justify-center items-center p-0 md:p-10">
-    <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165]"></div>
-    <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900"></div>
-    <!-- Write in Between  STARTS HERE-->
 
-
+<!-- Hero Section -->
+<section class="relative text-gray-900 bg-white/70 backdrop-blur-sm shadow-lg rounded-lg mx-4 mt-6">
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between">
     
-    <!-- Write in Between  ENDS HERE-->
-    <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white">
-        <img src="icons/github.svg" class="h-12">
-        <span class="font-bold font-techno">Blue</span>
-        <span class="font-code">Sky</span>
+    <!-- Text Content -->
+    <div class="md:w-1/2 space-y-6">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        Your Partner in Innovation & Security
+      </h1>
+      <p class="text-lg text-gray-700">
+        BlueSky delivers cutting-edge AI solutions, secure web testing, stunning app/web development, and elite cybersecurity services — all under one roof.
+      </p>
+      <div class="space-x-4 mt-4">
+        <button class="bg-black/80 text-white px-6 py-3 rounded-md font-semibold hover:bg-black/60 transition backdrop-blur">
+          Get Started
+        </button>
+        <button class="border border-gray-300/50 text-gray-800 px-6 py-3 rounded-md hover:bg-white/40 transition backdrop-blur">
+          Contact Us
+        </button>
+      </div>
     </div>
-    <img src="images/home_nightsky.jpg" class="w-full h-60 md:h-72 object-cover md:rounded-md shadow shadow-black/[0.2]">
+
+   <!-- Vertical Image Slider -->
+    <div class="md:w-1/2 mt-12 md:mt-0 h-100 overflow-hidden rounded-lg shadow-lg relative">
+      <div class="flex flex-col vertical-slider h-full">
+        <img src="images/home_nightsky.jpg" class="h-64 w-full object-cover" alt="Image 1" />
+        <img src="images/home.jpg" class="h-100 w-full object-cover" alt="Image 2" />
+        <img src="images/image.png" class="h-100 w-full object-cover" alt="Image 3" />
+        <img src="images/img4.png" class="h-100 w-full object-cover" alt="Image 4" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Clients with translucent background -->
+<section class="bg-red-100 backdrop-blur-md py-12 px-6 text-center rounded-lg mx-4 mt-8">
+  <h2 class="text-lg font-semibold text-gray-800 mb-6">
+    Trusted by innovators, startups, and security researchers
+  </h2>
+  <div class="flex flex-wrap justify-center gap-8 items-center">
+    <img src="icons/image.png" class="h-8" />
+    <img src="assets/clients/devhub.svg" class="h-8" />
+    <img src="assets/clients/cyberx.svg" class="h-8" />
+    <img src="assets/clients/appflow.svg" class="h-8" />
+    <img src="assets/clients/netsecure.svg" class="h-8" />
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-20 px-6 md:px-20 bg-white/60 backdrop-blur-md rounded-lg mx-4 mt-8">
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+     Explore Our Core Services
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- Single Service Card -->
+    <div class="group relative bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 hover:scale-[1.02] duration-500 border border-white/30">
+      <div class="flex items-center space-x-4 mb-4">
+        <div class="p-3 bg-blue-100/70 rounded-full backdrop-blur-sm">
+          <img src="assets/icons/ai.svg" alt="AI" class="h-8 w-8" />
+        </div>
+        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full font-medium">NEW</span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">AI/ML Projects</h3>
+      <p class="text-gray-700 leading-relaxed">From predictive analytics to smart automation, we build intelligent solutions using real-world data.</p>
+    </div>
+
+    <div class="group relative bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 hover:scale-[1.02] duration-500 border border-white/30">
+      <div class="flex items-center space-x-4 mb-4">
+        <div class="p-3 bg-red-100/70 rounded-full backdrop-blur-sm">
+          <img src="assets/icons/webtest.svg" alt="Testing" class="h-8 w-8" />
+        </div>
+        <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded-full font-medium">Security</span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Web Testing</h3>
+      <p class="text-gray-700 leading-relaxed">Vulnerability analysis,  and full-stack pentesting with reports and patch guides.</p>
+    </div>
+
+    <div class="group relative bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 hover:scale-[1.02] duration-500 border border-white/30">
+      <div class="flex items-center space-x-4 mb-4">
+        <div class="p-3 bg-yellow-100/70 rounded-full backdrop-blur-sm">
+          <img src="icons/webdev.svg" alt="Web Dev" class="h-8 w-8" />
+        </div>
+        <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full font-medium">Popular</span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Web Development</h3>
+      <p class="text-gray-700 leading-relaxed">Responsive and scalable websites using Angular, React, Tailwind, Node.js, and more.</p>
+    </div>
+
+    <div class="group relative bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 hover:scale-[1.02] duration-500 border border-white/30">
+      <div class="flex items-center space-x-4 mb-4">
+        <div class="p-3 bg-purple-100/70 rounded-full backdrop-blur-sm">
+          <img src="assets/icons/appdev.svg" alt="App Dev" class="h-8 w-8" />
+        </div>
+        <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded-full font-medium">Cross Platform</span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">App Development</h3>
+      <p class="text-gray-700 leading-relaxed">Native & hybrid apps that are fast, fluid, and functional — delivered on time and on brand.</p>
+    </div>
+
+    <div class="group relative bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 hover:scale-[1.02] duration-500 border border-white/30">
+      <div class="flex items-center space-x-4 mb-4">
+        <div class="p-3 bg-gray-100/70 rounded-full backdrop-blur-sm">
+          <img src="icons/image.png" alt="Cybersecurity" class="h-8 w-8" />
+        </div>
+        <span class="text-xs bg-black text-white px-2 py-1 rounded-full font-medium">HackProof</span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Cybersecurity</h3>
+      <p class="text-gray-700 leading-relaxed">Dark web investigations, credential recovery, social engineering, and enterprise security testing.</p>
+    </div>
+
+    <div class="group relative bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 hover:scale-[1.02] duration-500 border border-white/30">
+      <div class="flex items-center space-x-4 mb-4">
+        <div class="p-3 bg-teal-100/70 rounded-full backdrop-blur-sm">
+          <img src="assets/icons/custom.svg" alt="Custom Solutions" class="h-8 w-8" />
+        </div>
+        <span class="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded-full font-medium">Tailored</span>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Custom Solutions</h3>
+      <p class="text-gray-700 leading-relaxed">Whether you need automation tools, C2 dashboards, or forensic analytics — we’ve got it covered.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gradient-to-b from-black via-[#0e0d1a] to-black text-white py-20 px-4 text-center">
+  <!-- CTA Button -->
+  <div class="mb-12">
+    <a href="#" class="inline-block px-6 py-3 bg-[#00e6c7] text-black font-semibold rounded hover:scale-105 transition-transform duration-200">
+      Explore more
+    </a>
+  </div>
+
+  <!-- Subtitle -->
+  <h2 class="text-xl md:text-2xl font-light text-[#00e6c7] mb-12 tracking-wide">THE SMARTER WAY TO GROW</h2>
+
+  <!-- Stats Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+    <!-- Stat 1 -->
+    <div>
+      <p class="uppercase text-sm text-white/80 tracking-wide mb-2">Increase Conversion</p>
+      <h3 class="text-[4rem] font-bold text-[#00e6c7]">4X</h3>
+      <p class="text-sm text-white/80 mt-2">Average conversion rate lift</p>
+    </div>
+
+    <!-- Stat 2 -->
+    <div>
+      <p class="uppercase text-sm text-white/80 tracking-wide mb-2">Maximize Revenue</p>
+      <h3 class="text-[4rem] font-bold text-[#00e6c7]">15X</h3>
+      <p class="text-sm text-white/80 mt-2">Average platform ROI</p>
+    </div>
+
+    <!-- Stat 3 -->
+    <div>
+      <p class="uppercase text-sm text-white/80 tracking-wide mb-2">Proven Performance</p>
+      <h3 class="text-[4rem] font-bold text-[#00e6c7]">15K</h3>
+      <p class="text-sm text-white/80 mt-2">Fast-growing Shopify brands</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="bg-gradient-to-r from-indigo-500/70 via-purple-600/60 to-pink-500/70 backdrop-blur text-white text-center px-6 py-16 rounded-lg mx-4 mt-8">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">Let’s Build the Future Together</h2>
+  <p class="text-lg mb-6">Get in touch for AI integration, full-stack apps, or complete security audits — your success starts now.</p>
+  <button class="bg-white/80 text-indigo-700 font-bold px-6 py-3 rounded-md hover:bg-white/60 transition backdrop-blur">
+    Schedule a Free Consultation
+  </button>
+</section>
+
+<!-- Gradient Blob Footer -->
+<div class="relative flex justify-center items-center p-0 md:p-10 mt-12">
+  <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/50 via-[#1A1C36]/50 to-[#6B4165]/50"></div>
+  <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900/50 via-[#0759B9]/50 to-blue-900/50"></div>
+
+  <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white">
+    <img src="icons/github.svg" class="h-12">
+    <span class="font-bold font-techno">Blue</span>
+    <span class="font-code">Sky</span>
+  </div>
+  <img src="images/home_nightsky.jpg" class="w-full h-60 md:h-72 object-cover md:rounded-md shadow shadow-black/[0.2]">
 </div>
