@@ -1,8 +1,6 @@
 html { scroll-behavior: smooth; }
 
-.btn-learn {
-  @apply mt-4 px-5 py-2 rounded-full bg-white bg-opacity-20 text-white font-semibold transition hover:bg-opacity-30;
-}
+
 .btn-learn:hover { transform: translateY(-2px); }
 
 li::marker {
