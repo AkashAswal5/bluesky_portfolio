@@ -1,56 +1,94 @@
 <section class="relative contact-section font-roboto min-h-[85vh] bg-black/[0.1] text-white flex items-center justify-center p-6">
-  <div class="absolute -z-10 top-10 sm:right-40 rounded-t-full m-0 p-0 h-100 w-100 blur-3xl bg-gradient-to-b from-purple-900/[0.6] via-purple-800/[0.6] to-blue-900/[0.6]"></div>
-  <div class="absolute -z-10 -top-40 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-white/[0.6] via-white/[0.6] to-blue-900"></div>
+  
+  <div class=" bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-xl">
+    <div class="absolute opacity-100 -z-10 top-10 sm:right-0 rounded-t-full m-0 p-0 h-100 w-10 blur-3xl bg-gradient-to-b from-purple-900/[0.6] via-purple-800/[0.6] to-blue-900/[0.6]"></div>
+    <div class="absolute opacity-100 -z-10 -top-0 sm:left-0 rounded-t-full m-0 p-0 h-40 w-10 md:w-100 blur-3xl bg-gradient-to-b from-blue-400/[0.6] via-blue-700/[0.6] to-blue-900"></div>
 
-  <div class="container md:w-10/12 lg:w-7/12">
-    <!-- Heading -->
-    <h2 class="title text-xl sm:text-5xl font-extrabold mb-4">
-      <span class="text-gray-500">Say <span class="text-white">Hi!</span></span> and tell me about your idea
-    </h2>
-    <p class="subtitle text-lg text-gray-400 mb-10">Have a nice project? Reach out and let’s chat.</p>
+    <div class="md:max-w-[40vw] lg:max-w-[20vw] relative flex-[0.5] p-5 border-r border-white/[0.1] flex flex-col justify-between">
+      <div class="">
+        <div class="mb-5 flex items-center gap-2">
+          <img src="" alt="logo">
+          <p class="subtitle text-sm text-gray-400">Bluesky</p>
+        </div>
+        
+        <!-- Heading -->
+        <div class="title text-sm font-extrabold mb-2">
+          <span class="text-blue-500">Hi!</span> and tell me about your idea
+        </div>
+        <p class="subtitle text-xs text-gray-400 mb-2">Have a nice project? Reach out and let’s meet.</p>
 
-    <!-- Form -->
-    <form class="rounded-xl flex flex-col gap-6">
-      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="text-xs text-gray-400 mb-2">
+          {{about}}
+        </div>
+      </div>
+      
+      <div class="border-t border-white/[0.1] p-2">
+        <div class="flex gap-2 flex-wrap items-center">
+          <img src="icons/time.svg" class="h-4 opacity-60">
+          @for (item of times; track $index) {
+            <button type="submit"
+              class="bg-white/[0.2] text-xs text-black px-2 py-1 rounded-md transition duration-300 ease-in-out hover:bg-white hover:cursor-pointer self-start">
+              {{ item }}
+            </button>
+          }
+          
+        </div>
+        <div class="mt-2 flex gap-2 px-2 py-1 rounded-md text-xs items-center bg-white/[0.1] w-max">
+          <img src="icons/meet.svg" class="h-5">
+          Google Meet
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-1 p-5 md:max-w-[40vw] lg:max-w-[30vw]">
+      <!-- Form -->
+      <form class="flex flex-col gap-6 text-sm">
         <div>
-          <label class="text-gray-300 font-semibold mb-2 block">Name*</label>
+          <label class="text-gray-300 font-semibold mb-2 block">Your Name*</label>
           <input type="text" placeholder="John Doe" required
-            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-base font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
+            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
         </div>
         <div>
           <label class="text-gray-300 font-semibold mb-2 block">Email*</label>
           <input type="email" placeholder="you@example.com" required
-            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-base font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
+            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
         </div>
-      </div>
 
-      <div>
-        <label class="text-gray-300 font-semibold mb-2 block">Company Name</label>
-        <input type="text" placeholder="Your company or website"
-          class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-base font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
-      </div>
-
-      <div>
-        <label class="text-gray-300 font-semibold mb-2 block">What’s on your mind?*</label>
-        <div class="flex flex-wrap gap-3 font-code font-light text-sm">
-          <span class="px-4 py-2 rounded-full border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Mobile App</span>
-          <span class="px-4 py-2 rounded-full border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Website</span>
-          <span class="px-4 py-2 rounded-full border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Desktop App</span>
-          <span class="px-4 py-2 rounded-full border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Web Security</span>
-          <span class="px-4 py-2 rounded-full border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">AI Application</span>
+        <div>
+          <label class="text-gray-300 font-semibold mb-2 block">Company Name</label>
+          <input type="text" placeholder="Your company or website"
+            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
         </div>
-      </div>
 
-      <div>
-        <label class="text-gray-300 font-semibold mb-2 block">Message</label>
-        <textarea rows="5" placeholder="Write your message here..."
-          class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-base font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20"></textarea>
-      </div>
+        <div>
+          <label class="text-gray-300 font-semibold mb-2 block">What’s on your mind?*</label>
+          <div class="flex flex-wrap gap-3 font-code font-light text-xs">
+            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Mobile App</span>
+            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Website</span>
+            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Desktop App</span>
+            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Web Security</span>
+            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">AI Application</span>
+          </div>
+        </div>
 
-      <button type="submit"
-        class="bg-white text-black px-6 py-3 rounded-full transition duration-300 ease-in-out hover:bg-gray-300 transform hover:scale-[1.02] self-start">
-        Let’s Talk →
-      </button>
-    </form>
+        <div>
+          <label class="text-gray-300 font-semibold mb-2 block">Message</label>
+          <textarea rows="2" placeholder="Write your message here..."
+            class="w-full px-2 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20"></textarea>
+        </div>
+
+        <div class="flex justify-end gap-2">
+          <button type="submit"
+            class=" text-xs text-white px-3 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-[1.02] self-start">
+            Go Back
+          </button>
+          <button type="submit"
+            class="bg-blue-400 text-xs text-black px-3 py-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-500  transform hover:scale-[1.02] self-start">
+            Let's have a meet ->
+          </button>
+        </div>
+        
+      </form>
+    </div>
   </div>
 </section>
