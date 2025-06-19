@@ -17,6 +17,24 @@
         .animate-grid {
         animation: moveGrid 5s linear infinite;
         }
+    @keyframes pulsed {
+      0% {
+          transform: scale(1);
+          opacity: 1;
+      }
+      50% {
+          transform: scale(1.05);
+          opacity: 0.8;
+      }
+      100% {
+          transform: scale(1);
+          opacity: 1;
+      }
+      
+    }
+    .animate-pulser {
+      animation: pulsed 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
 }
 @layer utilities {
   @keyframes fadeIn {

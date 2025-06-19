@@ -88,13 +88,17 @@
 </section>
 
 <!-- Feature Box Section -->
-<section class="sm:p-10 my-10 flex justify-center">
-  <div class="flex-1 flex flex-col">
-    <div class="h-[80vh] bg-[#0a1979] sm:rounded-xl relative">
-      <div class="absolute bottom-5 right-5 w-13 h-13 rounded-full bg-[#9daaf2]"></div>
+<section class="relative bg-white sm:p-10 my-10 flex justify-center">
+  <div class="absolute z-9 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] anitmate-grid"></div>
+  <div class="absolute z-9 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 "></div>
+  
+
+  <div class="z-10 max-w-6xl flex-1 flex flex-col">
+    <div class=" bg-[#0a1979] rounded-xl relative aspect-video">
+      <div class="absolute bottom-5 right-5 w-13 h-13 rounded-full bg-white/[0.1] border border-white/[0.1]"></div>
     </div>
 
-    <div class="flex gap-4 relative left-10 mt-4">
+    <div class="w-max flex gap-4 relative left-10 mt-4">
       <div class="w-23 h-15 bg-[#bae6fd] border-2 border-transparent hover:border-red-400 rounded-md transition-all hover:cursor-pointer"></div>
       <div class="w-23 h-15 bg-[#0a1979] border-2 border-transparent hover:border-red-400 rounded-md transition-all hover:cursor-pointer"></div>
       <div class="w-23 h-15 bg-[#8bffc4] border-2 border-transparent hover:border-red-400 rounded-md transition-all hover:cursor-pointer"></div>
@@ -102,14 +106,15 @@
   </div>
 </section>
 
+<!-- Hero Section with Background Image -->
 <div class="relative flex justify-center items-center p-0 md:p-10 ">
-    <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165]"></div>
-    <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900"></div>
-    
-    <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white">
-        <img src="icons/github.svg" class="h-12">
-        <span class="font-bold font-techno">Blue</span>
-        <span class="font-code">Sky</span>
-    </div>
-    <img src="images/home_nightsky.jpg" class="w-full h-60 md:h-72 object-cover md:rounded-md shadow shadow-black/[0.2]">
+  <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
+  <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
+  
+  <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white">
+    <img src="icons/github.svg" class="h-12">
+    <span class="font-bold font-techno">Blue</span>
+    <span class="font-code">Sky</span>
+  </div>
+  <img src="images/home_nightsky.jpg" class="w-6xl h-60 md:h-64 object-cover md:rounded-md shadow shadow-black/[0.2]">
 </div>
