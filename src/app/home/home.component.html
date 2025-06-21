@@ -1,51 +1,35 @@
 <!-- Hero Section -->
-<section class="relative text-white bg-[#0d1117] backdrop-blur-md shadow-lg rounded-lg mx-4 mt-6">
-  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between">
-    <!-- Text Content -->
-    <div class="md:w-1/2 space-y-6">
-      <h1 class="text-4xl md:text-6xl font-bold leading-tight text-white">
+<section class="relative text-white shadow-lg rounded-lg mx-4 mt-6">
+
+  <div class="opacity-50">
+    <div class="absolute -z-10 top-10 sm:left-40 rounded-full m-0 p-0 h-80 w-[40vw] sm:w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
+    <div class="hidden md:block absolute -z-10 -bottom-10 sm:right-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#b161a5] via-[#353ebe] to-[#6B4165] animate-pulser"></div>
+  </div>
+
+  <div class="max-w-7xl z-10 mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between">
+    <div class="md:flex-[0.5] space-y-6 font-roboto">
+      <h1 class="text-4xl md:text-6xl leading-tight text-white">
         Your Partner in Innovation & Security
       </h1>
-      <p class="text-lg text-gray-400">
-        BlueSky delivers cutting-edge AI solutions, secure web testing, stunning app/web development, and elite cybersecurity services — all under one roof.
+      <p class="text-lg text-gray-400 font-techno font-light">
+        BlueSky delivers cutting-edge AI solutions, secure web testing, stunning app/web development, and elite cybersetopcurity services — all under one roof.
       </p>
       <div class="space-x-4 mt-4">
-        <button class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-md font-semibold transition duration-300">
-          Get Started
+        <button class="bg-blue-600 hover:bg-blue-500 text-white text-xs px-4 py-2 rounded-md font-light transition duration-300">
+          CONTACT US
         </button>
-        <button class="border border-gray-400 text-gray-300 px-6 py-3 rounded-md hover:bg-white/10 transition duration-300">
-          Contact Us
+        <button class="bg-white/[0.0] hover:bg-white text-white hover:text-black text-xs px-4 py-2 rounded-md transition duration-300 transition-all">
+          GET STARTED >
         </button>
-      </div>
-    </div>
-    <!-- Vertical Image Slider -->
-    <div class="md:w-1/2 mt-12 md:mt-0 h-100 overflow-hidden rounded-lg shadow-lg relative">
-      <div class="flex flex-col vertical-slider h-full">
-        <img src="images/home_nightsky.jpg" class="h-64 w-full object-cover" alt="Image 1" />
-        <img src="images/home.jpg" class="h-100 w-full object-cover" alt="Image 2" />
-        <img src="images/image.png" class="h-100 w-full object-cover" alt="Image 3" />
-        <img src="images/img4.png" class="h-100 w-full object-cover" alt="Image 4" />
       </div>
     </div>
   </div>
 </section>
 
-<!-- Clients Section in Dark Theme -->
-<section class="bg-[#111827] text-white py-12 px-6 text-center rounded-lg mx-4 mt-8">
-  <h2 class="text-lg font-semibold text-gray-300 mb-6">
-    Trusted by innovators, startups, and security researchers
-  </h2>
-  <div class="flex flex-wrap justify-center gap-8 items-center">
-    <img src="icons/image.png" class="h-8 grayscale hover:grayscale-0 transition duration-300" />
-    <img src="assets/clients/devhub.svg" class="h-8 grayscale hover:grayscale-0 transition duration-300" />
-    <img src="assets/clients/cyberx.svg" class="h-8 grayscale hover:grayscale-0 transition duration-300" />
-    <img src="assets/clients/appflow.svg" class="h-8 grayscale hover:grayscale-0 transition duration-300" />
-    <img src="assets/clients/netsecure.svg" class="h-8 grayscale hover:grayscale-0 transition duration-300" />
-  </div>
-</section>
+
 
 <!-- Services Section in Dark Theme -->
-<section class="py-20 px-6 md:px-20 bg-[#0b0f1a] text-white rounded-lg mx-4 mt-8">
+<section class="py-20 px-6 md:px-20 text-white rounded-lg mx-4 mt-8">
   <h2 class="text-4xl font-bold text-center text-white mb-12">
     Explore Our Core Services
   </h2>
@@ -168,12 +152,10 @@
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
     <!-- Card 1 -->
-    <div class="bg-blue-500/[0.1] border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-blue-500/30 transition-all">
+    <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-blue-500/30 transition-all">
       <div class="mb-6">
         <div class="space-y-2">
-          <div class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg text-sm px-4 py-2 w-max">Scanning ports...</div>
-          <div class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg text-sm px-4 py-2 w-max">Detecting threats...</div>
-          <div class="bg-gradient-to-r from-blue-500 to-blue-300 opacity-50 rounded-lg text-sm px-4 py-2 w-max">Analyzing payloads...</div>
+          <div class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg text-sm px-4 py-2 w-max transition-all">Scanning Ports ...</div>
         </div>
       </div>
       <div class="flex items-center  gap-2">
@@ -187,24 +169,38 @@
     </div>
 
     <!-- Card 2 -->
-    <div class="bg-blue-500/[0.1] border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-purple-500/30 transition-all">
+    <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-purple-500/30 transition-all">
+      
       <div class="mb-6">
-        <img src="assets/icons/webtest.svg" alt="Analytics" class="w-full max-w-[200px] mx-auto rounded" />
+        <button disabled type="button" class="text-white bg-purple-500/30  hover:bg-purple-500/30  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 inline-flex items-center">
+          <svg aria-hidden="true" role="status" class="inline w-4 h-4 me-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"/>
+          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"/>
+          </svg>
+          Analyzing
+        </button>
       </div>
-      <h3 class="font-semibold font-roboto text-lg flex items-center gap-2 mb-2">🔍 Get Clarity</h3>
+
+      <div class="flex items-center  gap-2">
+        <img src="icons/star.svg" class="h-4">
+        <h3 class="font-semibold font-roboto text-base">Get Clarity</h3>
+      </div>
       <p class="text-sm font-techno text-gray-400">
         BlueSky simplifies cybersecurity analytics and dark web monitoring into clear, actionable insights so you always know your risk posture.
       </p>
     </div>
 
     <!-- Card 3 -->
-    <div class="bg-blue-500/[0.1] border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-green-500/30 transition-all">
+    <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-green-500/30 transition-all">
       <div class="mb-6 flex justify-between items-center">
         <div class="bg-green-400 text-black px-4 py-2 rounded-md text-sm font-semibold">↑ 92% Threat Accuracy</div>
-        <img src="assets/icons/growth.svg" class="h-6 w-6" alt="Growth Arrow">
+        <!-- <img src="assets/icons/growth.svg" class="h-6 w-6" alt="Growth Arrow"> -->
       </div>
-      <h3 class="font-semibold text-lg flex items-center gap-2 mb-2">💰 Boost Digital Security Value</h3>
-      <p class="text-sm text-gray-400">
+      <div class="flex items-center  gap-2">
+        <img src="icons/boost.svg" class="h-4">
+        <h3 class="font-semibold font-roboto text-base">Boost Digital Security Value</h3>
+      </div>
+      <p class="text-sm text-gray-400 font-techno">
         Convert weak security into strong defenses. BlueSky empowers individuals and businesses with tools to recover, protect, and monitor accounts.
       </p>
     </div>
