@@ -1,4 +1,4 @@
-<!-- Hero Section -->
+<!-- Landing Hero Section -->
 <section class="relative text-white shadow-lg rounded-lg mx-4 mt-6">
 
   <div class="opacity-50">
@@ -6,19 +6,19 @@
     <div class="hidden md:block absolute -z-10 -bottom-10 sm:right-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#b161a5] via-[#353ebe] to-[#6B4165] animate-pulser"></div>
   </div>
 
-  <div class="max-w-7xl z-10 mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between">
-    <div class="md:flex-[0.5] space-y-6 font-roboto">
-      <h1 class="text-4xl md:text-6xl leading-tight text-white">
-        Your Partner in Innovation & Security
+  <div class="max-w-6xl z-10 mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between">
+    <div class="md:flex-[0.7] space-y-6 font-roboto">
+      <h1 class="text-4xl md:text-5xl leading-tight text-white font-sans">
+        Your Partner in Innovation & Development
       </h1>
       <p class="text-lg text-gray-400 font-techno font-light">
         BlueSky delivers cutting-edge AI solutions, secure web testing, stunning app/web development, and elite cybersetopcurity services — all under one roof.
       </p>
-      <div class="space-x-4 mt-4">
-        <button class="bg-blue-600 hover:bg-blue-500 text-white text-xs px-4 py-2 rounded-md font-light transition duration-300">
+      <div class="space-x-4 mt-4 font-techno">
+        <button class="bg-blue-600 hover:bg-blue-500 text-white text-xs px-4 py-2 rounded-md transition duration-300">
           CONTACT US
         </button>
-        <button class="bg-white/[0.0] hover:bg-white text-white hover:text-black text-xs px-4 py-2 rounded-md transition duration-300 transition-all">
+        <button class="bg-white/[0.0] hover:bg-white text-white hover:text-black text-xs px-4 py-2 rounded-md duration-300 transition-all">
           GET STARTED >
         </button>
       </div>
@@ -28,130 +28,100 @@
 
 
 
-<!-- Services Section in Dark Theme -->
-<section class="py-20 px-6 md:px-20 text-white rounded-lg mx-4 mt-8">
-  <h2 class="text-4xl font-bold text-center text-white mb-12">
-    Explore Our Core Services
+<!-- Services we Provide -->
+<section class="text-white flex flex-col justify-center items-center">
+  <h2 class="text-4xl font-roboto text-center text-white mb-12">
+    Services we Provide
   </h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-    <!-- Service Card Template -->
-    <div class="group bg-[#111827] border border-white/10 p-6 rounded-2xl shadow-xl transition transform hover:shadow-blue-500/30 hover:-translate-y-2 hover:scale-[1.03] duration-500">
-      <div class="flex items-center space-x-4 mb-4">
-        <div class="p-3 bg-blue-800/50 rounded-full">
-          <img src="assets/icons/ai.svg" alt="AI" class="h-8 w-8" />
-        </div>
-        <span class="text-xs bg-green-600 text-white px-2 py-1 rounded-full font-medium">NEW</span>
+  <div class="relative w-6xl flex flex-wrap gap-10 mb-10">
+    <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
+    <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
+    <div class="absolute -z-10 bottom-10 sm:left-10 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#499eff5b] to-blue-300/[0.6] animate-pulser"></div>
+
+      <div class="w-6xl flex flex-col gap-10">
+        @for (item of items; track $index) {
+          <div class="relative flex flex-row gap-2 items-start bg-black/[0.5] border border-white/[0.1] backdrop-blur-xl p-5 rounded-xl overflow-hidden shadow-lg transition-all">
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:50px_50px] z-0"></div>
+            <div class="absolute inset-0 bg-[linear-gradient(to_top,rgba(1,1,1,0.5)_1px,transparent)] z-10 pointer-events-none"></div>
+
+            
+            <div class="flex-1 flex flex-row justify-between">
+              <div class="flex flex-col justify-between pb-5">
+
+                <!-- Feature Heading  -->
+                <div class="flex flex-row gap-2 items-center w-max bg-white text-black backdrop-blur-xl p-2 pr-4 rounded-xl shadow-lg hover:scale-[1.01] transition-all">
+                  <img src="icons/web.svg" class="h-10">
+                  <p class="font-roboto">Web Design</p>
+                </div>
+                <p class="text-white/[0.5] text-sm max-w-xl font-techno">We Help companies craft captivating websites. Our Designs tell stories and guide users, from vision to actions</p>
+              
+              </div>
+              <img src="images/web.png" class="h-60 rounded-md">
+            </div>
+            
+          </div>
+          
+        }
       </div>
-      <h3 class="text-xl font-bold text-white mb-2">AI/ML Projects</h3>
-      <p class="text-gray-400 leading-relaxed">From predictive analytics to smart automation, we build intelligent solutions using real-world data.</p>
+      
+  </div>
+</section>
+
+<!-- Each Features  -->
+<section class="flex flex-col items-center">
+
+  <div class="w-6xl flex flex-col gap-10">
+    @for (item of items; track $index) {
+      
+    }
+  </div>
+</section>
+
+<!-- Work Statistics -->
+<section class="flex items-center justify-center text-center font-roboto text-white">
+  <div class="max-w-6xl bg-black/[0.5] backdrop-blur-md p-10 border-white/[0.1] border rounded-md">
+
+    <div class="mb-12">
+      <a href="#" class="inline-block px-4 py-2 text-sm bg-white font-roboto text-black font-light rounded hover:scale-105 transition-transform duration-200">
+        Discover Our Edge
+      </a>
     </div>
 
-    <div class="group bg-[#111827] border border-white/10 p-6 rounded-2xl shadow-xl transition transform hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-[1.03] duration-500">
-      <div class="flex items-center space-x-4 mb-4">
-        <div class="p-3 bg-red-800/50 rounded-full">
-          <img src="assets/icons/webtest.svg" alt="Testing" class="h-8 w-8" />
-        </div>
-        <span class="text-xs bg-red-600 text-white px-2 py-1 rounded-full font-medium">Security</span>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+      <div>
+        <p class="uppercase text-sm mb-2">Websites & Apps Developed</p>
+        <h3 class="text-[4rem] font-bold">25+</h3>
+        <p class="text-sm  mt-2 font-techno text-white/[0.5]">Built with modern, responsive tech stacks</p>
       </div>
-      <h3 class="text-xl font-bold text-white mb-2">Web Testing</h3>
-      <p class="text-gray-400 leading-relaxed">Vulnerability analysis, and full-stack pentesting with reports and patch guides.</p>
-    </div>
 
-    <div class="group bg-[#111827] border border-white/10 p-6 rounded-2xl shadow-xl transition transform hover:shadow-yellow-400/30 hover:-translate-y-2 hover:scale-[1.03] duration-500">
-      <div class="flex items-center space-x-4 mb-4">
-        <div class="p-3 bg-yellow-600/50 rounded-full">
-          <img src="icons/webdev.svg" alt="Web Dev" class="h-8 w-8" />
-        </div>
-        <span class="text-xs bg-yellow-500 text-black px-2 py-1 rounded-full font-medium">Popular</span>
+      <div>
+        <p class="uppercase text-sm mb-2">Cybersecurity Projects</p>
+        <h3 class="text-[4rem] font-bold ">15+</h3>
+        <p class="text-sm mt-2 font-techno text-white/[0.5]">Network/Web pentests, account recoveries</p>
       </div>
-      <h3 class="text-xl font-bold text-white mb-2">Web Development</h3>
-      <p class="text-gray-400 leading-relaxed">Responsive and scalable websites using Angular, React, Tailwind, Node.js, and more.</p>
-    </div>
 
-    <div class="group bg-[#111827] border border-white/10 p-6 rounded-2xl shadow-xl transition transform hover:shadow-purple-500/30 hover:-translate-y-2 hover:scale-[1.03] duration-500">
-      <div class="flex items-center space-x-4 mb-4">
-        <div class="p-3 bg-purple-800/50 rounded-full">
-          <img src="assets/icons/appdev.svg" alt="App Dev" class="h-8 w-8" />
-        </div>
-        <span class="text-xs bg-purple-600 text-white px-2 py-1 rounded-full font-medium">Cross Platform</span>
+      <div>
+        <p class="uppercase text-sm mb-2">Tools & Scripts Developed</p>
+        <h3 class="text-[4rem] font-bold">10+</h3>
+        <p class="text-sm mt-2 font-techno text-white/[0.5]">Automation tools, scanners & open-source utilities</p>
       </div>
-      <h3 class="text-xl font-bold text-white mb-2">App Development</h3>
-      <p class="text-gray-400 leading-relaxed">Native & hybrid apps that are fast, fluid, and functional — delivered on time and on brand.</p>
-    </div>
 
-    <div class="group bg-[#111827] border border-white/10 p-6 rounded-2xl shadow-xl transition transform hover:shadow-slate-400/30 hover:-translate-y-2 hover:scale-[1.03] duration-500">
-      <div class="flex items-center space-x-4 mb-4">
-        <div class="p-3 bg-gray-700/50 rounded-full">
-          <img src="icons/image.png" alt="Cybersecurity" class="h-8 w-8" />
-        </div>
-        <span class="text-xs bg-black text-white px-2 py-1 rounded-full font-medium">HackProof</span>
-      </div>
-      <h3 class="text-xl font-bold text-white mb-2">Cybersecurity</h3>
-      <p class="text-gray-400 leading-relaxed">Dark web investigations, credential recovery, social engineering, and enterprise security testing.</p>
-    </div>
-
-    <div class="group bg-[#111827] border border-white/10 p-6 rounded-2xl shadow-xl transition transform hover:shadow-teal-500/30 hover:-translate-y-2 hover:scale-[1.03] duration-500">
-      <div class="flex items-center space-x-4 mb-4">
-        <div class="p-3 bg-teal-700/50 rounded-full">
-          <img src="assets/icons/custom.svg" alt="Custom Solutions" class="h-8 w-8" />
-        </div>
-        <span class="text-xs bg-teal-500 text-black px-2 py-1 rounded-full font-medium">Tailored</span>
-      </div>
-      <h3 class="text-xl font-bold text-white mb-2">Custom Solutions</h3>
-      <p class="text-gray-400 leading-relaxed">Whether you need automation tools, C2 dashboards, or forensic analytics — we’ve got it covered.</p>
     </div>
   </div>
 </section>
 
-<section class="bg-white text-black py-20 px-4 text-center">
-  <!-- CTA Button -->
-  <div class="mb-12">
-    <a href="#" class="inline-block px-6 py-3 bg-[#00e6c7] text-black font-semibold rounded hover:scale-105 transition-transform duration-200">
-      Discover Our Edge
-    </a>
-  </div>
-  <!-- Subtitle -->
-  <h2 class="text-xl md:text-2xl font-light text-[#00e6c7] mb-12 tracking-widest uppercase">What We've Built & Secured</h2>
-
-  <!-- Stats Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
- 
-   
-    <!-- Stat 1 -->
-    <div>
-      <p class="uppercase text-sm tracking-wide mb-2">Websites & Apps Developed</p>
-      <h3 class="text-[4rem] font-bold text-[#00e6c7]">25+</h3>
-      <p class="text-sm  mt-2">Built with modern, responsive tech stacks</p>
-    </div>
-
-    <!-- Stat 2 -->
-    <div>
-      <p class="uppercase text-sm  tracking-wide mb-2">Cybersecurity Projects</p>
-      <h3 class="text-[4rem] font-bold text-[#00e6c7]">15+</h3>
-      <p class="text-shadow-amber-900 mt-2">Network/Web pentests, account recoveries</p>
-    </div>
-
-    <!-- Stat 3 -->
-    <div>
-      <p class="uppercase text-sm  tracking-wide mb-2">Tools & Scripts Developed</p>
-      <h3 class="text-[4rem] font-bold text-[#00e6c7]">10+</h3>
-      <p class="text-sm mt-2">Automation tools, scanners & open-source utilities</p>
-    </div>
-
-  </div>
-</section>
-
+<!-- Features Points -->
 <section class="text-white py-16 px-6 sm:px-12">
-  <div class="text-center max-w-4xl mx-auto mb-14">
-    <h2 class="text-4xl sm:text-5xl font-bold mb-4">Secure your digital world to the <span class="italic text-blue-400">next level</span></h2>
-    <p class="text-lg text-gray-400">
+  <div class="font-roboto text-center max-w-4xl mx-auto mb-14">
+    <h2 class="text-4xl sm:text-5xl mb-4">Secure your digital world to the <span class="font-code text-blue-400">next level</span></h2>
+    <p class="text-gray-400 font-techno">
       The power of an elite cybersecurity team — without the need for expensive tools or hours of manual effort.
     </p>
   </div>
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-    <!-- Card 1 -->
     <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-blue-500/30 transition-all">
       <div class="mb-6">
         <div class="space-y-2">
@@ -168,7 +138,6 @@
       </p>
     </div>
 
-    <!-- Card 2 -->
     <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-purple-500/30 transition-all">
       
       <div class="mb-6">
@@ -190,11 +159,9 @@
       </p>
     </div>
 
-    <!-- Card 3 -->
     <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-green-500/30 transition-all">
       <div class="mb-6 flex justify-between items-center">
         <div class="bg-green-400 text-black px-4 py-2 rounded-md text-sm font-semibold">↑ 92% Threat Accuracy</div>
-        <!-- <img src="assets/icons/growth.svg" class="h-6 w-6" alt="Growth Arrow"> -->
       </div>
       <div class="flex items-center  gap-2">
         <img src="icons/boost.svg" class="h-4">
