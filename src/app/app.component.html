@@ -1,69 +1,71 @@
 <main>
-  <div class="relative border-1 border-b-0 border-white/[0.1] sm:mx-10">
-  </div>
+  <div class="relative border border-b-0 border-white/[0.1] sm:mx-10 overflow-hidden"></div>
 
-  <nav class="sticky z-20 top-10">
-    <div class="max-w-[90vw] sm:max-w-[80vw] lg:max-w-[50em] border border-white/[0.2] backdrop-blur-md rounded-md flex flex-col mx-auto p-1">
-      <div class="flex-1 flex justify-between">
-        <a [routerLink]="['']" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img class="h-8  text-white" alt="Logo">
+  <nav class="sticky z-20 top-10 overflow-hidden">
+    <div class="max-w-[90vw] sm:max-w-[80vw] lg:max-w-[50em] border border-white/[0.2] backdrop-blur-md rounded-md flex flex-col mx-auto p-1 overflow-hidden">
+      <div class="flex-1 flex justify-between items-center overflow-hidden">
+        <a [routerLink]="['']" class="flex items-center space-x-3 rtl:space-x-reverse overflow-hidden">
+          <img class="h-8 text-white" alt="Logo">
         </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button [routerLink]="['contact']" type="button" class="flex gap-2 font-semibold items-center backdrop-blur-lg border border-white/[0.05] bg-white/[0.1] hover:bg-white text-white hover:text-black rounded-md text-sm px-4 py-2 cursor-pointer transition-all">
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse overflow-hidden">
+          <button [routerLink]="['contact']" type="button" class="flex gap-2 font-semibold items-center backdrop-blur-lg border border-white/[0.05] bg-white/[0.1] hover:bg-white text-white hover:text-black rounded-md text-sm px-4 py-2 cursor-pointer transition-all overflow-hidden">
             CONTACT US
           </button>
         </div>
       </div>
-
     </div>
   </nav>
 
-  
-  <!-- <div class="border-1 border-t-0 border-white/[0.1] sm:mx-10"></div> -->
-  <div class="relative border-1 border-t-0 border-white/[0.1] sm:mx-10">
+
+
+  <!-- Top Divider with Arrows -->
+  <div class="relative border border-t-0 border-white/[0.1] sm:mx-10 overflow-hidden">
     <span class="hidden sm:block absolute -top-4 -left-2 text-2xl font-light text-white/[0.2] font-techno">^</span>
     <span class="hidden sm:block absolute -top-4 -right-2 text-2xl text-white/[0.2] font-light font-techno">^</span>
 
-      <router-outlet />
+    <router-outlet />
   </div>
 
-
-  <footer class="relative flex justify-center border-x-1 border-white/[0.1] sm:mx-10 sm:p-5 font-roboto backdrop-blur-2xl bg-black/[0.5]">
+  <!-- Footer -->
+  <footer class="relative flex justify-center border-x-1 border-white/[0.1] sm:mx-10 sm:p-5 font-roboto backdrop-blur-2xl bg-black/[0.5] overflow-hidden">
     <span class="hidden sm:block absolute -top-4 -left-2 text-2xl text-white/[0.2] font-light font-techno">+</span>
     <span class="hidden sm:block absolute -top-4 -right-2 text-2xl text-white/[0.2] font-light font-techno">+</span>
 
-      <div class="flex-1 max-w-7xl p-4 gap-10 flex flex-wrap flex-col sm:flex-row justify-between">
-        <div class="flex flex-col justify-start items-start gap-y-1">
-          <span class="text-sm text-white font-medium sm:text-center">Bluesky</span>
-          <span class="text-sm text-gray-500 sm:text-center">© June 2025 All rights reserved.</span>
-        </div>
-
-        <div class="flex flex-col justify-start items-start gap-y-1">
-          <span class="text-sm text-white font-medium sm:text-center">Quick Links</span>
-          <span class="text-sm text-gray-500 sm:text-center">Home</span>
-          <span class="text-sm text-gray-500 sm:text-center">Features</span>
-          <span class="text-sm text-gray-500 sm:text-center">Contact</span>
-          <span class="text-sm text-gray-500 sm:text-center">Join us</span>
-        </div>
-
-        <div class="flex flex-col justify-start items-start gap-y-1">
-          <span class="text-sm text-white font-medium sm:text-center">Services</span>
-          <span class="text-sm text-gray-500 sm:text-center">Penetration Testing</span>
-          <span class="text-sm text-gray-500 sm:text-center">Dark Web Monitoring</span>
-          <span class="text-sm text-gray-500 sm:text-center">AI & ML Solutions</span>
-          <span class="text-sm text-gray-500 sm:text-center">Website Development</span>
-          <span class="text-sm text-gray-500 sm:text-center">Account Recovery</span>
-        </div>
-        
-        <div class="flex flex-wrap gap-1">
-          <a href="https://github.com/Blue-sky-2025" class="w-10 h-10 border border-white/[0.1] hover:border-white/[0.3] rounded-sm flex items-center justify-center transition-colors">
-            <img class="p-1 opacity-80 hover:opacity-100" src="icons/github.svg">
-          </a>
-          <a href="https://github.com/Blue-sky-2025" class="w-10 h-10 border border-white/[0.1] hover:border-white/[0.3] rounded-sm flex items-center justify-center transition-colors">
-            <img class="p-1 opacity-80 hover:opacity-100" src="icons/email.svg">
-          </a>
-        </div>
-        
+    <div class="flex-1 max-w-7xl p-4 gap-10 flex flex-wrap flex-col sm:flex-row justify-between overflow-hidden">
+      <!-- Branding Info -->
+      <div class="flex flex-col justify-start items-start gap-y-1">
+        <span class="text-sm text-white font-medium sm:text-center">Bluesky</span>
+        <span class="text-sm text-gray-500 sm:text-center">© June 2025 All rights reserved.</span>
       </div>
+
+      <!-- Quick Links -->
+      <div class="flex flex-col justify-start items-start gap-y-1">
+        <span class="text-sm text-white font-medium sm:text-center">Quick Links</span>
+        <span class="text-sm text-gray-500 sm:text-center">Home</span>
+        <span class="text-sm text-gray-500 sm:text-center">Features</span>
+        <span class="text-sm text-gray-500 sm:text-center">Contact</span>
+        <span class="text-sm text-gray-500 sm:text-center">Join us</span>
+      </div>
+
+      <!-- Services Links -->
+      <div class="flex flex-col justify-start items-start gap-y-1">
+        <span class="text-sm text-white font-medium sm:text-center">Services</span>
+        <span class="text-sm text-gray-500 sm:text-center">Penetration Testing</span>
+        <span class="text-sm text-gray-500 sm:text-center">Dark Web Monitoring</span>
+        <span class="text-sm text-gray-500 sm:text-center">AI & ML Solutions</span>
+        <span class="text-sm text-gray-500 sm:text-center">Website Development</span>
+        <span class="text-sm text-gray-500 sm:text-center">Account Recovery</span>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex flex-wrap gap-1">
+        <a href="https://github.com/Blue-sky-2025" class="w-10 h-10 border border-white/[0.1] hover:border-white/[0.3] rounded-sm flex items-center justify-center transition-colors">
+          <img class="p-1 opacity-80 hover:opacity-100" src="icons/github.svg">
+        </a>
+        <a href="https://github.com/Blue-sky-2025" class="w-10 h-10 border border-white/[0.1] hover:border-white/[0.3] rounded-sm flex items-center justify-center transition-colors">
+          <img class="p-1 opacity-80 hover:opacity-100" src="icons/email.svg">
+        </a>
+      </div>
+    </div>
   </footer>
 </main>
