@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   save_time_text = "Analyzing payloads...";
+  items = [1,2,4,5,6,10]
   
   ngOnInit(): void {
     this.changeText();
