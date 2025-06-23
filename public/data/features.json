@@ -27,34 +27,32 @@
             }
         ]
     },
-    [
-        {
-            "feature_id": "cybersecurity",
-            "title": "cybersecurity",
-            "description": "Learn how to protect systems, detect vulnerabilities, and defend against cyber threats.",
-            "mockup_image": "web-development.png",
-            "feature_stack": {
-                "title": "Network Security & Tools",
-                "description": "Understand how to secure networks, monitor traffic, and use essential cybersecurity tools for real-world analysis.",
-                "stack_list": [
-                    {
-                        "name": "HTML",
-                        "icon": "icons/meet.svg"
-                    },
-                    {
-                        "name": "CSS",
-                        "icon": "icons/meet.svg"
-                    }
-                ]
-            },
-            "feature_projects": [
+    {
+        "feature_id": "cybersecurity",
+        "title": "cybersecurity",
+        "description": "Learn how to protect systems, detect vulnerabilities, and defend against cyber threats.",
+        "mockup_image": "web-development.png",
+        "feature_stack": {
+            "title": "Network Security & Tools",
+            "description": "Understand how to secure networks, monitor traffic, and use essential cybersecurity tools for real-world analysis.",
+            "stack_list": [
                 {
-                    "title": "Vulnerability Scanner",
-                    "icon": "images/web.png",
-                    "link": "link-to-vuln-scanner",
-                    "image": "images/web.png"
+                    "name": "HTML",
+                    "icon": "icons/meet.svg"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "icons/meet.svg"
                 }
             ]
-        }
-    ]
+        },
+        "feature_projects": [
+            {
+                "title": "Vulnerability Scanner",
+                "icon": "images/web.png",
+                "link": "link-to-vuln-scanner",
+                "image": "images/web.png"
+            }
+        ]
+    }
 ]
