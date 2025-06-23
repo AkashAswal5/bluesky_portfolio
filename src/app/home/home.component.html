@@ -1,5 +1,5 @@
 <!-- Landing Hero Section -->
-<section id="home" class="relative text-white shadow-lg rounded-lg mx-4 mt-6">
+<section id="home" class="relative text-white rounded-lg mx-4 mt-6">
   <div class="absolute inset-0 -z-10">
     <div class="absolute top-20 left-1/2 transform -translate-x-1/2 h-[20rem] w-[20vw] blur-[100px] bg-gradient-to-r from-blue-900 via-purple-800 to-indigo-900 opacity-40 animate-pulse"></div>
     <div class="hidden md:block absolute -bottom-16 right-1/2 transform translate-x-1/2 h-64 w-[20vw] blur-[120px] bg-gradient-to-br from-fuchsia-700 via-indigo-600 to-purple-900 opacity-30 animate-pulse"></div>
@@ -30,7 +30,7 @@
   <h2 class="text-3xl font-roboto text-center font-light text-white/20 mb-12">
     [Services we Provide]
   </h2>
-  <div class="relative w-full max-w-6xl flex flex-wrap gap-10 mb-10 overflow-hidden cursor-pointer hover:saturate-120 transition-all duration-700">
+  <div class="relative w-full max-w-6xl flex flex-wrap gap-10 mb-10 overflow-hidden cursor-pointer hover:saturate-120 transition-all duration-100">
     <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-full max-w-md blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
     <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
     <div class="absolute -z-10 bottom-10 sm:left-10 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#499eff5b] to-blue-300/[0.6] animate-pulser"></div>
@@ -43,7 +43,7 @@
 
           <div class="realtive flex-1 flex flex-row justify-between h-60 overflow-hidden">
             <div class="flex flex-col justify-between pb-5">
-              <!-- Feature Heading  -->
+              
               <div class="relative z-10 flex flex-row gap-2 items-center w-max border border-white/[0.1] text-white/80 backdrop-blur-xl p-1 pr-4 rounded-xl shadow-lg hover:scale-[1.01] transition-all">
                 <img [src]="item.feature_icon" class="h-8">
                 <p class="font-roboto">{{item.feature_title}}</p>
@@ -62,7 +62,10 @@
 
 <!-- stats section  -->
 <section class="flex items-center justify-center text-center font-roboto text-white overflow-hidden">
-  <div class="max-w-6xl backdrop-blur-2xl bg-black/[0.5] p-10 border-white/[0.1] border rounded-md overflow-hidden">
+  <div class="relative max-w-6xl backdrop-blur-2xl bg-black/[0.5] p-10 border-white/[0.1] border rounded-md overflow-hidden">
+    <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 aspect-square max-w-md blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
+    <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-30 aspect-square max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
+    <div class="absolute -z-10 bottom-10 sm:left-10 rounded-full m-0 p-0 h-40 aspect-square max-w-md blur-3xl bg-gradient-to-b from-blue-900 via-[#499eff5b] to-blue-800/[0.6] animate-pulser"></div>
 
     <div class="mb-12">
       <div class="inline-block px-4 py-2 text-sm text-white font-robot font-light rounded transition-transform duration-200">
@@ -73,7 +76,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto overflow-hidden">
       @for (item of homepage_statistics; track $index) {
         <div>
-          <p class="uppercase text-sm mb-2 font-techno">[{{item.stats_title}}]</p>
+          <p class="uppercase text-sm mb-2 font-semibold">{{item.stats_title}}</p>
           <h3 class="text-[4rem] font-bold">{{ displayCounts[$index]}}+</h3>
           <p class="text-sm mt-2 font-techno text-white/[0.5]">{{item.stats_description}}</p>
         </div>
@@ -163,8 +166,8 @@
 
 <!-- Hero Section with Background Image -->
 <div class="relative flex justify-center items-center p-0 md:p-10">
-  <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-[25rem] blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
-  <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-[25rem] blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
+  <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-10 sm:h-80 aspect-square blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
+  <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-10 sm:h-80 aspect-square blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
 
   <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white z-10">
     <img src="icons/github.svg" class="h-12" />
