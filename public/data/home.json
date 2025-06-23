@@ -1,0 +1,28 @@
+{
+    "features":[
+        {
+            "feature_icon": "icons/web.svg",
+            "feature_title": "Web Design",
+            "feature_description": "We Help companies craft captivating websites. Our Designs tell stories and guide users, from vision to actions",
+            "feature_image": "images/web.png",
+            "feature_id": "web_development"
+        }
+    ],
+    "statistics": [
+        {
+            "stats_title": "websites & Apps developed",
+            "stats_value": "25",
+            "stats_description": "Built with modern, responsive tech stacks"
+        },
+        {
+            "stats_title": "Cybersecurity Projects",
+            "stats_value": "15",
+            "stats_description": "Network/Web pentests, account recoveries"
+        },
+        {
+            "stats_title": "Tools & Scripts Developed",
+            "stats_value": "10",
+            "stats_description": "Automation tools, scanners & open-source utilities"
+        }
+    ]
+}
