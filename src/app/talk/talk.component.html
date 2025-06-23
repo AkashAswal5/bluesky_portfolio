@@ -1,6 +1,6 @@
 <section class="relative contact-section font-roboto min-h-[85vh] text-white flex items-center justify-center p-6">
   
-  <div class="backdrop-blur-md bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-xl">
+  <div class="backdrop-blur-3xl bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-xl">
     <div class="absolute opacity-100 -z-10 top-10 sm:right-0 rounded-t-full m-0 p-0 h-100 w-10 blur-3xl bg-gradient-to-b from-purple-900/[0.6] via-purple-800/[0.6] to-blue-900/[0.6]"></div>
     <div class="absolute opacity-90 -z-10 -top-0 sm:left-0 rounded-t-full m-0 p-0 h-40 w-10 md:w-100 blur-3xl bg-gradient-to-b from-blue-400/[0.6] via-blue-700/[0.6] to-blue-900"></div>
 
@@ -78,12 +78,12 @@
         </div>
 
         <div class="flex justify-end gap-2">
-          <button type="submit"
-            class=" text-xs text-white px-3 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-[1.02] self-start">
+          <button [routerLink]="['']" type="submit"
+            class="cursor-pointer text-xs text-white px-3 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-[1.02] self-start">
             Go Back
           </button>
           <button type="submit"
-            class="bg-blue-400 text-xs text-black px-3 py-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-500  transform hover:scale-[1.02] self-start">
+            class="cursor-pointer bg-blue-400 text-xs text-black px-3 py-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-500  transform hover:scale-[1.02] self-start">
             Let's have a meet ->
           </button>
         </div>

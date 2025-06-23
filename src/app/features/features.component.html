@@ -1,7 +1,8 @@
+
 <!-- Hero Section -->
-<section class="text-white flex justify-center">
-  <div class="max-w-6xl min-h-[50vh] flex flex-col sm:flex-row items-center m-20 flex-wrap gap-8">
-    <!-- Text Section -->
+<section class="text-white flex justify-center items-center p-5 md:p-10 min-h-[80vh]">
+  <div class="xl:w-6xl flex flex-col sm:flex-row items-center flex-wrap gap-8">
+
     <div class="flex-1">
       <h2 class="text-5xl font-techno font-bold mb-4">{{data.title}}</h2>
       <p class="text-gray-300/[0.5] font-techno mt-10">
@@ -9,7 +10,6 @@
       </p>
     </div>
 
-    <!-- Image Section -->
     <div class="flex-1 flex justify-center">
       <img [src]="data.mockup_image" alt="Mockup" class="max-w-[200px] rounded-lg shadow-lg" />
     </div>
@@ -17,15 +17,15 @@
 </section>
 
 <!-- details about the work -->
-<section class="realtive text-white relative flex justify-center items-center">
+<section class="realtive text-white relative flex justify-center items-center p-5 md:p-10">
   <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-10 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
   <div class="absolute -z-10 bottom-10 sm:right-40 rounded-full m-0 p-0 h-40 w-10 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
   
-  <div class="max-w-6xl backdrop-blur-md bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-xl">
-    <div class="relative p-5 border-white/[0.1] flex flex-col justify-between">
-      <div class="">
+  <div class="backdrop-blur-md bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-lg">
+    <div class="relative p-5 border-white/[0.1]">
+      <div class="w-full">
         <div class="mb-5 flex items-center gap-2">
-          <img src="" alt="logo">
+          <img src="" alt="logo">p-0 md:p-10
           {{data.feature_stack.title}}
         </div>
         <div class="text-xs text-gray-400 my-4">
@@ -48,50 +48,20 @@
 </section>
 
 
-<!-- Services -->
-<!-- <section class="text-white flex justify-center">
-  <div class="max-w-6xl relative flex flex-wrap gap-8 justify-center">
-    
-    
-    @for (item of items; track $index) {
-      <div class="realtive max-w-80 backdrop-blur-md bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-xl">
-        <div class="absolute opacity-100 -z-10 top-10 sm:left-[{{10*$index}}] rounded-t-full m-0 p-0 h-40 w-10 md:w-20 blur-3xl bg-gradient-to-b from-purple-900/[0.6] via-purple-800/[0.6] to-blue-900/[0.6]"></div>
-        <div class="absolute opacity-100 -z-10 bottom-0 sm:right-{{10*$index}} rounded-t-full m-0 p-0 h-40 w-10 md:w-20 blur-3xl bg-gradient-to-b from-blue-400/[0.6] via-blue-700/[0.6] to-blue-900/[0.6]"></div>
-
-        <div class="relative p-5 border-white/[0.1] flex flex-col justify-between">
-          <div class="">
-            <div class="mb-5 flex items-center gap-2">
-              <img src="" alt="logo">
-              and tell me about your idea
-            </div>
-            
-            <div class="text-xs text-gray-400 mb-2">
-              {{about}}
-            </div>
-          </div>
-        </div>
-      </div>
-    }
-
-  </div>
-</section> 
-
-
-
 <!-- Feature Box Section -->
-<section class="relative sm:p-10 flex justify-center">
+<section class="relative sm:p-10 flex justify-center p-5 md:p-10">
   <div class="absolute opacity-10 z-9 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] anitmate-grid"></div>
   <div class="absolute opacity-10 z-9 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 "></div>
   
 
   <div class="z-10 max-w-6xl flex-1 flex flex-col">
     @for (item of data.feature_projects; track $index) {
-      <div class="bg-black/[0.5] hover:saturate-0 overflow-hidden backdrop-blur-lg border border-white/[0.1] rounded-xl relative aspect-video transition-all">
+      <div class="bg-black/[0.5] hover:saturate-0 overflow-hidden backdrop-blur-lg border border-white/[0.1] rounded-lg relative aspect-video transition-all">
         <img [src]="item.image" class="object-contain">
         
         <div class="absolute inset-0 bg-[radial-gradient(circle,transparent_40%,#00000050_100%)] transition-all"></div>
-        <a [href]="item.link"  class="absolute bottom-5 right-5 hover:scale-[0.98] w-max pr-2 flex items-center gap-2 font-techno text-sm text-white/[0.8] rounded-sm bg-white/[0.1] border border-white/[0.3] transition-all">
-          <img [src]="item.icon" class="h-8 w-8 m-1 bg-white/[0.4] object-cover rounded-sm">
+        <a [href]="item.link"  class="absolute bottom-5 right-5 hover:scale-[0.98] w-max pr-2 flex items-center gap-2 font-techno text-sm text-black/[0.8] rounded-lg bg-white/[0.1] border border-black/[0.3] transition-all">
+          <img [src]="item.icon" class="h-8 w-8 m-1 bg-white/[0.4] object-cover rounded-md">
           {{item.title}}
         </a>
       </div>
