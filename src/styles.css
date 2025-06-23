@@ -4,6 +4,7 @@
     --font-roboto: "Roboto Mono", monospace;
     --font-code: "Source Code Pro", monospace;
     --font-techno: "Space Grotesk", sans-serif;
+    --font-niceroboto: "Roboto", sans-serif;
 }
 @layer utilities {
     @keyframes moveGrid {

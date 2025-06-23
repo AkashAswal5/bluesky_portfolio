@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-error',

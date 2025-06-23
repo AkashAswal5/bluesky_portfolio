@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   homepage_statistics:any[] = []
   displayCounts: number[] = [];
   constructor(private http: HttpClient) {}
+  
   ngOnInit(): void {
     this.http.get<any>('data/home.json').subscribe((data) => {
       this.homepage_features = data.features;
