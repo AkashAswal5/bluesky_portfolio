@@ -2,8 +2,12 @@
 <section class="relative text-white shadow-lg rounded-lg mx-4 mt-6 overflow-hidden">
   <!-- Background Blobs -->
   <div class="absolute inset-0 -z-10 overflow-hidden">
-    <div class="absolute top-20 left-1/2 transform -translate-x-1/2 h-[32rem] w-[90vw] blur-[100px] bg-gradient-to-r from-blue-900 via-purple-800 to-indigo-900 opacity-40 animate-pulse"></div>
-    <div class="hidden md:block absolute -bottom-16 right-1/2 transform translate-x-1/2 h-64 w-[80vw] blur-[120px] bg-gradient-to-br from-fuchsia-700 via-indigo-600 to-purple-900 opacity-30 animate-pulse"></div>
+    <div
+      class="absolute top-20 left-1/2 transform -translate-x-1/2 h-[32rem] w-[90vw] blur-[100px] bg-gradient-to-r from-blue-900 via-purple-800 to-indigo-900 opacity-40 animate-pulse">
+    </div>
+    <div
+      class="hidden md:block absolute -bottom-16 right-1/2 transform translate-x-1/2 h-64 w-[80vw] blur-[120px] bg-gradient-to-br from-fuchsia-700 via-indigo-600 to-purple-900 opacity-30 animate-pulse">
+    </div>
   </div>
 
   <!-- Content Container -->
@@ -13,13 +17,16 @@
         Your Partner in Innovation & Development
       </h1>
       <p class="text-lg text-gray-300 font-light max-w-xl">
-        BlueSky delivers cutting-edge AI solutions, secure web testing, stunning app/web development, and elite cybersecurity services — all under one roof.
+        BlueSky delivers cutting-edge AI solutions, secure web testing, stunning app/web development, and elite
+        cybersecurity services — all under one roof.
       </p>
       <div class="space-x-4 mt-6">
-        <button class="bg-gradient-to-r from-blue-600 to-indigo-500 hover:from-blue-500 hover:to-indigo-400 text-white text-sm px-6 py-3 rounded-md transition duration-300 shadow-md hover:shadow-blue-400/50">
+        <button
+          class="bg-gradient-to-r from-blue-600 to-indigo-500 hover:from-blue-500 hover:to-indigo-400 text-white text-sm px-6 py-3 rounded-md transition duration-300 shadow-md hover:shadow-blue-400/50">
           CONTACT US
         </button>
-        <button class="border border-white/20 hover:border-white text-white text-sm px-6 py-3 rounded-md transition duration-300 hover:bg-white hover:text-black">
+        <button
+          class="border border-white/20 hover:border-white text-white text-sm px-6 py-3 rounded-md transition duration-300 hover:bg-white hover:text-black">
           GET STARTED &gt;
         </button>
       </div>
@@ -33,38 +40,53 @@
     Services we Provide
   </h2>
   <div class="relative w-full max-w-7xl flex flex-wrap gap-10 mb-10 overflow-hidden">
-    <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-full max-w-md blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
-    <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
-    <div class="absolute -z-10 bottom-10 sm:left-10 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#499eff5b] to-blue-300/[0.6] animate-pulser"></div>
+    <div
+      class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-full max-w-md blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser">
+    </div>
+    <div
+      class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser">
+    </div>
+    <div
+      class="absolute -z-10 bottom-10 sm:left-10 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#499eff5b] to-blue-300/[0.6] animate-pulser">
+    </div>
 
     <div class="w-full flex flex-col gap-10 overflow-hidden">
       @for (item of items; track $index) {
-        <div class="relative flex flex-row gap-2 items-start bg-black/[0.5] border border-white/[0.1] backdrop-blur-xl p-5 rounded-xl overflow-hidden shadow-lg transition-all">
-          <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:50px_50px] z-0"></div>
-          <div class="absolute inset-0 bg-[linear-gradient(to_top,rgba(1,1,1,0.5)_1px,transparent)] z-10 pointer-events-none"></div>
-
-          <div class="flex-1 flex flex-row justify-between">
-            <div class="flex flex-col justify-between pb-5">
-              <!-- Feature Heading  -->
-              <div class="flex flex-row gap-2 items-center w-max bg-white text-black backdrop-blur-xl p-2 pr-4 rounded-xl shadow-lg hover:scale-[1.01] transition-all">
-                <img src="icons/web.svg" class="h-10">
-                <p class="font-roboto">Web Design</p>
-              </div>
-              <p class="text-white/[0.5] text-sm max-w-xl font-techno">We Help companies craft captivating websites. Our Designs tell stories and guide users, from vision to actions</p>
-            </div>
-            <img src="images/web.png" class="h-60 rounded-md">
-          </div>
+      <div
+        class="relative flex flex-row gap-2 items-start bg-black/[0.5] border border-white/[0.1] backdrop-blur-xl p-5 rounded-xl overflow-hidden shadow-lg transition-all">
+        <div
+          class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:50px_50px] z-0">
         </div>
+        <div
+          class="absolute inset-0 bg-[linear-gradient(to_top,rgba(1,1,1,0.5)_1px,transparent)] z-10 pointer-events-none">
+        </div>
+
+        <div class="flex-1 flex flex-row justify-between">
+          <div class="flex flex-col justify-between pb-5">
+            <!-- Feature Heading  -->
+            <div
+              class="flex flex-row gap-2 items-center w-max bg-white text-black backdrop-blur-xl p-2 pr-4 rounded-xl shadow-lg hover:scale-[1.01] transition-all">
+              <img src="icons/web.svg" class="h-10">
+              <p class="font-roboto">Web Design</p>
+            </div>
+            <p class="text-white/[0.5] text-sm max-w-xl font-techno">We Help companies craft captivating websites. Our
+              Designs tell stories and guide users, from vision to actions</p>
+          </div>
+          <img src="images/web.png" class="h-60 rounded-md">
+        </div>
+      </div>
       }
     </div>
   </div>
+
+
 </section>
 
 <!-- Each Features  -->
 <section class="flex flex-col items-center overflow-hidden">
   <div class="w-full max-w-7xl flex flex-col gap-10">
     @for (item of items; track $index) {
-      
+
     }
   </div>
 </section>
@@ -73,7 +95,8 @@
   <div class="max-w-6xl bg-black/[0.5] backdrop-blur-md p-10 border-white/[0.1] border rounded-md overflow-hidden">
 
     <div class="mb-12">
-      <a href="#" class="inline-block px-4 py-2 text-sm bg-white font-roboto text-black font-light rounded hover:scale-105 transition-transform duration-200">
+      <a href="#"
+        class="inline-block px-4 py-2 text-sm bg-white font-roboto text-black font-light rounded hover:scale-105 transition-transform duration-200">
         Discover Our Edge
       </a>
     </div>
@@ -104,7 +127,8 @@
 <!-- Features Points -->
 <section class="text-white py-16 px-6 sm:px-12 overflow-hidden">
   <div class="font-roboto text-center max-w-4xl mx-auto mb-14 overflow-hidden">
-    <h2 class="text-4xl sm:text-5xl mb-4">Secure your digital world to the <span class="font-code text-blue-400">next level</span></h2>
+    <h2 class="text-4xl sm:text-5xl mb-4">Secure your digital world to the <span class="font-code text-blue-400">next
+        level</span></h2>
     <p class="text-gray-400 font-techno">
       The power of an elite cybersecurity team — without the need for expensive tools or hours of manual effort.
     </p>
@@ -112,10 +136,12 @@
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto overflow-hidden">
 
-    <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-blue-500/30 transition-all overflow-hidden">
+    <div
+      class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-blue-500/30 transition-all overflow-hidden">
       <div class="mb-6">
         <div class="space-y-2">
-          <div class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg text-sm px-4 py-2 w-max transition-all">Scanning Ports ...</div>
+          <div class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg text-sm px-4 py-2 w-max transition-all">
+            Scanning Ports ...</div>
         </div>
       </div>
       <div class="flex items-center gap-2">
@@ -123,16 +149,24 @@
         <h3 class="font-semibold font-roboto text-base">Save Time</h3>
       </div>
       <p class="text-sm font-techno text-gray-400">
-        Automated penetration tests and vulnerability scans save hours of manual effort. Let BlueSky handle the threats while you focus on growth.
+        Automated penetration tests and vulnerability scans save hours of manual effort. Let BlueSky handle the threats
+        while you focus on growth.
       </p>
     </div>
 
-    <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-purple-500/30 transition-all overflow-hidden">
+    <div
+      class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-purple-500/30 transition-all overflow-hidden">
       <div class="mb-6">
-        <button disabled type="button" class="text-white bg-purple-500/30 hover:bg-purple-500/30 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 inline-flex items-center">
-          <svg aria-hidden="true" role="status" class="inline w-4 h-4 me-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"/>
-            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"/>
+        <button disabled type="button"
+          class="text-white bg-purple-500/30 hover:bg-purple-500/30 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 inline-flex items-center">
+          <svg aria-hidden="true" role="status" class="inline w-4 h-4 me-3 text-white animate-spin"
+            viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="#E5E7EB" />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="currentColor" />
           </svg>
           Analyzing
         </button>
@@ -142,11 +176,13 @@
         <h3 class="font-semibold font-roboto text-base">Get Clarity</h3>
       </div>
       <p class="text-sm font-techno text-gray-400">
-        BlueSky simplifies cybersecurity analytics and dark web monitoring into clear, actionable insights so you always know your risk posture.
+        BlueSky simplifies cybersecurity analytics and dark web monitoring into clear, actionable insights so you always
+        know your risk posture.
       </p>
     </div>
 
-    <div class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-green-500/30 transition-all overflow-hidden">
+    <div
+      class="bg-blue-500/[0.1] backdrop-blur-sm border border-white/10 rounded-md p-6 shadow hover:scale-[1.01] hover:shadow-green-500/30 transition-all overflow-hidden">
       <div class="mb-6 flex justify-between items-center">
         <div class="bg-green-400 text-black px-4 py-2 rounded-md text-sm font-semibold">↑ 92% Threat Accuracy</div>
       </div>
@@ -155,7 +191,8 @@
         <h3 class="font-semibold font-roboto text-base">Boost Digital Security Value</h3>
       </div>
       <p class="text-sm text-gray-400 font-techno">
-        Convert weak security into strong defenses. BlueSky empowers individuals and businesses with tools to recover, protect, and monitor accounts.
+        Convert weak security into strong defenses. BlueSky empowers individuals and businesses with tools to recover,
+        protect, and monitor accounts.
       </p>
     </div>
 
@@ -166,8 +203,12 @@
 <!-- Hero Section with Background Image -->
 <div class="relative flex justify-center items-center p-0 md:p-10 overflow-hidden">
   <!-- Background Glow Gradients -->
-  <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-[25rem] blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
-  <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-[25rem] blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
+  <div
+    class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-[25rem] blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser">
+  </div>
+  <div
+    class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-[25rem] blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser">
+  </div>
 
   <!-- Logo Title -->
   <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white z-10">
@@ -177,5 +218,6 @@
   </div>
 
   <!-- Background Image -->
-  <img src="images/home_nightsky.jpg" class="w-full h-60 md:h-64 object-cover md:rounded-md shadow shadow-black/[0.2]" />
+  <img src="images/home_nightsky.jpg"
+    class="w-full h-60 md:h-64 object-cover md:rounded-md shadow shadow-black/[0.2]" />
 </div>
