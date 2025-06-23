@@ -1,0 +1,32 @@
+[
+    {
+        "feature_id": "web_development",
+        "title": "Web Development",
+        "description": "Learn how to build websites and web applications using HTML, CSS, and",
+        "mockup_image": "web-development.png",
+
+        "feature_stack": {
+            "title": "HTML & CSS",
+            "description": "Master the fundamentals of web design with HTML and CSS. Create responsive layouts, style your pages, and understand the box model.",
+            "stack_list":[
+                {
+                    "name": "HTML",
+                    "icon": "icons/meet.svg"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "icons/meet.svg"
+                }
+            ]
+        },
+
+        "feature_projects": [
+            {
+                "title": "Portfolio Website",
+                "icon": "images/web.png",
+                "link": "link-to-portfolio",
+                "image": "images/web.png"
+            }
+        ]
+    }
+]

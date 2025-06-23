@@ -1,24 +1,41 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [CommonModule, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
+
 export class HomeComponent implements OnInit {
-  save_time_text = "Analyzing payloads...";
-  items = [1,2,4,5,6,10]
   
+  homepage_features:any[] = []
+  homepage_statistics:any[] = []
+  displayCounts: number[] = [];
+  constructor(private http: HttpClient) {}
   ngOnInit(): void {
-    this.changeText();
+    this.http.get<any>('data/home.json').subscribe((data) => {
+      this.homepage_features = data.features;
+      this.homepage_statistics = data.statistics;
+      
+      this.homepage_statistics.forEach((item, index) => {
+        this.displayCounts[index] = 0;
+        this.increaseCount(index, item.stats_value);
+      });
+    });
+
+    
   }
-  changeText(){
-    const save_time_text_list = ["Scanning ports...", "Detecting threats...", "Analyzing vulnerabilities...", "Generating report..."]
-    let i =0
-    setInterval(()=>{
-      this.save_time_text = save_time_text_list[i]
-      i = (i + 1) % save_time_text_list.length
-    }, 3000)
+
+  increaseCount(index: number, target: number) {
+    if (this.displayCounts[index] < target) {
+      setTimeout(() => {
+        this.displayCounts[index]++;
+        this.increaseCount(index, target);
+      }, 100);
+    }
   }
 }

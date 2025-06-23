@@ -3,15 +3,15 @@
   <div class="max-w-6xl min-h-[50vh] flex flex-col sm:flex-row items-center m-20 flex-wrap gap-8">
     <!-- Text Section -->
     <div class="flex-1">
-      <h2 class="text-5xl font-techno font-bold mb-4">Web Development</h2>
+      <h2 class="text-5xl font-techno font-bold mb-4">{{data.title}}</h2>
       <p class="text-gray-300/[0.5] font-techno mt-10">
-        Grow Space is a leading video game developer and publisher platform, designed with the concept of astronauts exploring outer space. Our vision combines creativity with clean UI/UX for seamless digital experiences.
+        {{data.description}}
       </p>
     </div>
 
     <!-- Image Section -->
     <div class="flex-1 flex justify-center">
-      <img src="assets/phone-mockup.png" alt="Phone Mockup" class="max-w-[200px] rounded-lg shadow-lg" />
+      <img [src]="data.mockup_image" alt="Mockup" class="max-w-[200px] rounded-lg shadow-lg" />
     </div>
   </div>
 </section>
@@ -26,18 +26,21 @@
       <div class="">
         <div class="mb-5 flex items-center gap-2">
           <img src="" alt="logo">
-          and tell me about your idea
+          {{data.feature_stack.title}}
         </div>
         <div class="text-xs text-gray-400 my-4">
-          {{about}}
+          {{data.feature_stack.description}}
         </div>
       </div>
       <hr class="border-t border-white/[0.1]">
-      <div class="mt-2">
-        <div class="flex gap-2 px-2 py-1 rounded-md text-xs items-center bg-white/[0.1] w-max">
-          <img src="icons/meet.svg" class="h-5">
-          Google Meet
-        </div>
+      <div class="mt-2 flex flex-wrap gap-2 items-center">
+        @for (item of data.feature_stack.stack_list; track $index) {
+          <div class="flex gap-2 px-2 py-1 rounded-md text-xs items-center bg-white/[0.1] w-max">
+            <img [src]="item.icon" class="h-5">
+            {{item.name}}
+          </div>
+        }
+        
       </div>
 
     </div>
@@ -82,12 +85,18 @@
   
 
   <div class="z-10 max-w-6xl flex-1 flex flex-col">
-    <div class="bg-black/[0.5] backdrop-blur-lg border border-white/[0.1] rounded-xl relative aspect-video">
-      <div class="absolute bottom-5 right-5 w-max pr-2 flex items-center gap-2 font-techno text-sm text-white/[0.8] rounded-sm bg-white/[0.01] border border-white/[0.1]">
-        <img src="icons/arrow-right.svg" alt=" " class="h-8 w-8 m-1 bg-white/[0.4] rounded-sm">
-        project-name
+    @for (item of data.feature_projects; track $index) {
+      <div class="bg-black/[0.5] hover:saturate-0 overflow-hidden backdrop-blur-lg border border-white/[0.1] rounded-xl relative aspect-video transition-all">
+        <img [src]="item.image" class="object-contain">
+        
+        <div class="absolute inset-0 bg-[radial-gradient(circle,transparent_40%,#00000050_100%)] transition-all"></div>
+        <a [href]="item.link"  class="absolute bottom-5 right-5 hover:scale-[0.98] w-max pr-2 flex items-center gap-2 font-techno text-sm text-white/[0.8] rounded-sm bg-white/[0.1] border border-white/[0.3] transition-all">
+          <img [src]="item.icon" class="h-8 w-8 m-1 bg-white/[0.4] object-cover rounded-sm">
+          {{item.title}}
+        </a>
       </div>
-    </div>
+    }
+    
 
   </div>
 </section>
