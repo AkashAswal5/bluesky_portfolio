@@ -104,5 +104,87 @@
                 "image": "images/Dark_web_architecture.png"
             }
         ]
+    },
+    {
+  "feature_id": "mobile_app",
+  "title": "Mobile App Development",
+  "description": "We build modern, scalable, and user-friendly mobile apps tailored to your business goals and user needs.",
+  "mockup_image": "icons/mobile.svg",
+
+  "feature_stack": {
+    "title": "Technology Stack",
+    "description": "We use robust frameworks and native tools to ensure high performance and great user experiences on Android platforms.",
+    "stack_list": [
+      {
+        "name": "Flutter",
+        "icon": "icons/flutter.svg"
+      },
+      {
+        "name": "React Native",
+        "icon": "icons/react.svg"
+      },
+      {
+        "name": "Android (Kotlin)",
+        "icon": "icons/kotlin.svg"
+      },
+      {
+        "name": "Firebase",
+        "icon": "images/firebase.png"
+      }
+    ]
+  },
+
+  "feature_projects": [
+    {
+      "title": "Delivery Tracking App",
+      "icon": "images/mobile.png",
+      "link": "https://example.com/delivery-app",
+      "image": "images/delivery-preview.png"
+    },
+    {
+      "title": "E-Commerce App",
+      "icon": "images/mobile.png",
+      "link": "https://example.com/ecommerce-app",
+      "image": "images/e-com-app.jpg"
     }
+  ]
+},{
+  "feature_id": "ai_ml",
+  "title": "AI & ML Solutions",
+  "description": "We provide custom AI & ML development services to automate tasks, improve decision-making, and enhance customer experience.",
+  "mockup_image": "images/aiml1.jpg",
+
+  "feature_stack": {
+    "title": "Technology Stack",
+    "description": "We leverage modern ML frameworks and platforms for building powerful data-driven applications.",
+    "stack_list": [
+      {
+        "name": "Python",
+        "icon": "icons/python.svg"
+      },
+      {
+        "name": "TensorFlow",
+        "icon": "icons/tensorflow.svg"
+      },
+      {
+        "name": "Django",
+        "icon": "icons/django.svg"
+      },
+      {
+        "name": "OpenCV",
+        "icon": "icons/opencv.svg"
+      }
+    ]
+  },
+
+  "feature_projects": [
+    {
+      "title": "Face Recognition System",
+      "icon": "images/ai.png",
+      "link": "https://example.com/face-recognition",
+      "image": "images/face.jpeg"
+    }
+  ]
+}
+
 ]

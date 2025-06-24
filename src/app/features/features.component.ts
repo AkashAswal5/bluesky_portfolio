@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class FeaturesComponent implements OnInit {
   
-  allowedFeatures = ['web_development','cybersecurity', 'mobile', 'cyber'];
+  allowedFeatures = ['web_development','cybersecurity', 'mobile_app', 'ai_ml'];
   featurepage:any[] = []
   data:any = {}
   index: number = 0;
