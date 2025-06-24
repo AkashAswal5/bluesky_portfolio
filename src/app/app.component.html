@@ -2,12 +2,15 @@
   <div class="relative border border-b-0 border-white/[0.1] sm:mx-10 overflow-hidden"></div>
 
   <nav class="sticky z-20 top-10 overflow-hidden">
-    <div class="max-w-[90vw] sm:max-w-[80vw] lg:max-w-[50em] border border-white/[0.2] backdrop-blur-md rounded-md flex flex-col mx-auto p-1 overflow-hidden">
-      <div class="flex-1 flex justify-between items-center overflow-hidden">
-        <a [routerLink]="['']" class="flex items-center space-x-3 rtl:space-x-reverse overflow-hidden">
-          <img class="h-8 text-white" alt="Logo">
+    <div class="max-w-[90vw] sm:max-w-[80vw] lg:max-w-[50em] border border-white/[0.2] backdrop-blur-md rounded-md flex flex-col mx-auto">
+      <div class="flex-1 flex justify-between items-center">
+        <a [routerLink]="['']" class="flex items-center">
+          <img src="logo.svg" class="h-10 text-white" alt="Logo">
+          <p class="text-white font-semibold font-niceroboto font-stretch-110%">Blue Sky</p>
         </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse overflow-hidden">
+        
+        
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse overflow-hidden m-1">
           <button [routerLink]="['contact']" type="button" class="flex gap-2 font-semibold items-center backdrop-blur-lg border border-white/[0.05] bg-white/[0.1] hover:bg-white text-white hover:text-black rounded-md text-sm px-4 py-2 cursor-pointer transition-all overflow-hidden">
             CONTACT US
           </button>
@@ -34,7 +37,11 @@
     <div class="flex-1 max-w-7xl p-4 gap-10 flex flex-wrap flex-col sm:flex-row justify-between overflow-hidden">
       <!-- Branding Info -->
       <div class="flex flex-col justify-start items-start gap-y-1">
-        <span class="text-sm text-white font-medium sm:text-center">Bluesky</span>
+        <div class="flex items-start">
+          <img src="logo.svg" class="h-10 text-white" alt="Logo">
+          <span class="text-sm text-white font-medium sm:text-center mt-1">Bluesky</span>
+        </div>
+        
         <span class="text-sm text-gray-500 sm:text-center">© June 2025 All rights reserved.</span>
       </div>
 
