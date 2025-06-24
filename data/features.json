@@ -1,0 +1,202 @@
+[
+    {
+        "feature_id": "web_development",
+        "title": "Web Development",
+        "description": "We create powerful, modern websites that are lightning-fast, mobile-friendly, and built to convert. Whether you're a startup or an enterprise, we bring your digital vision to life.",
+        "mockup_image": "images/web/webdevelopment.png",
+        "feature_stack": {
+            "title": "Technology Stack",
+            "description": "We leverage modern web technologies to ensure your site is responsive, accessible, SEO-friendly, and performance-optimized.",
+            "stack_list": [
+                {
+                    "name": "HTML5",
+                    "icon": "icons/html.svg"
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "icons/css.svg"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "icons/js.svg"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "icons/Tailwind.png"
+                },
+                {
+                    "name": "Angular",
+                    "icon": "icons/Angular.png"
+                },
+                {
+                    "name": "React",
+                    "icon": "icons/react.svg"
+                },
+                {
+                    "name": "Django",
+                    "icon": "icons/django.svg"
+                }
+            ]
+        },
+        "feature_projects": [
+          {
+            "title": "Portfolio",
+            "icon": "images/web/dot.svg",
+            "link": "https://se00n00.github.io/My_Portfolio/",
+            "image": "images/web.png"
+          },
+          {
+            "title": "Personal Blog",
+            "icon": "images/web/white.png",
+            "link": "https://se00n00.github.io/Personal-Blog/",
+            "image": "images/web/blogs.png"
+          },
+          {
+            "title": "Startup Landing Page",
+            "icon": "icons/portfolio.svg",
+            "link": "#",
+            "image": "images/portfolio.png"
+          },
+          {
+            "title": "Corporate Portfolio Website",
+            "icon": "icons/portfolio.svg",
+            "link": "#",
+            "image": "images/portfolio-preview.png"
+          }
+        ]
+    },
+    {
+        "feature_id": "cybersecurity",
+        "title": "Cybersecurity",
+        "description": "We provide a comprehensive range of cybersecurity services to protect your digital assets: \n Penetration Testing to identify and exploit vulnerabilities\n- Vulnerability Scanning for network and web applications\n- Account Recovery and digital forensics support\n- Dark Web Monitoring to detect stolen data or credentials\n- Wi-Fi Network Auditing to secure wireless infrastructure\n- Endpoint Protection to secure client devices and systems.",
+        "mockup_image": "images/hacker.jpg",
+        "feature_stack": {
+            "title": "Security Tools & Expertise",
+            "description": "We use industry-standard tools and techniques to perform in-depth assessments of networks, websites, and endpoints. Our services include penetration testing, vulnerability assessments, and continuous threat monitoring.",
+            "stack_list": [
+                {
+                    "name": "Nmap",
+                    "icon": "images/nmap.png"
+                },
+                {
+                    "name": "Burp Suite",
+                    "icon": "images/BurpSuite.png"
+                },
+                {
+                    "name": "Wireshark",
+                    "icon": "images/Wireshark.png"
+                },
+                {
+                    "name": "Aircrack-ng",
+                    "icon": "images/Aircrack-ng.jpg"
+                },
+                {
+                    "name": "OSWAP ZAP",
+                    "icon": "images/zap.jpeg"
+                }
+            ]
+        },
+        "feature_projects": [
+            {
+                "title": "Vulnerability Scanner",
+                "icon": "icons/scanner.svg",
+                "link": "https://example.com/vulnerability-scanner",
+                "image": "images/vulnerability_scanning.jpg"
+            },
+            {
+                "title": "Dark Web Monitoring Dashboard",
+                "icon": "icons/darkweb.svg",
+                "link": "https://example.com/darkweb-monitoring",
+                "image": "images/darkweb.png"
+            },
+            {
+                "title": "Dark web Architecture",
+                "icon": "icons/account-recovery.svg",
+                "link": "https://example.com/account-recovery",
+                "image": "images/Dark_web_architecture.png"
+            }
+        ]
+    },
+    {
+  "feature_id": "mobile_app",
+  "title": "Mobile App Development",
+  "description": "We build modern, scalable, and user-friendly mobile apps tailored to your business goals and user needs.",
+  "mockup_image": "icons/mobile.svg",
+
+  "feature_stack": {
+    "title": "Technology Stack",
+    "description": "We use robust frameworks and native tools to ensure high performance and great user experiences on Android platforms.",
+    "stack_list": [
+      {
+        "name": "Flutter",
+        "icon": "icons/flutter.svg"
+      },
+      {
+        "name": "React Native",
+        "icon": "icons/react.svg"
+      },
+      {
+        "name": "Android (Kotlin)",
+        "icon": "icons/kotlin.svg"
+      },
+      {
+        "name": "Firebase",
+        "icon": "images/firebase.png"
+      }
+    ]
+  },
+
+  "feature_projects": [
+    {
+      "title": "Delivery App",
+      "icon": "images/mobile.png",
+      "link": "https://example.com/delivery-app",
+      "image": "images/mobile/devliveryapp.webp"
+    },
+    {
+      "title": "E-Commerce App",
+      "icon": "images/mobile.png",
+      "link": "https://example.com/ecommerce-app",
+      "image": "images/e-com-app.jpg"
+    }
+  ]
+},{
+  "feature_id": "ai_ml",
+  "title": "AI & ML Solutions",
+  "description": "We provide custom AI & ML development services to automate tasks, improve decision-making, and enhance customer experience.",
+  "mockup_image": "images/ai/aiml1.png",
+
+  "feature_stack": {
+    "title": "Technology Stack",
+    "description": "We leverage modern ML frameworks and platforms for building powerful data-driven applications.",
+    "stack_list": [
+      {
+        "name": "Python",
+        "icon": "icons/python.svg"
+      },
+      {
+        "name": "TensorFlow",
+        "icon": "icons/tensorflow.svg"
+      },
+      {
+        "name": "Django",
+        "icon": "icons/django.svg"
+      },
+      {
+        "name": "OpenCV",
+        "icon": "icons/opencv.svg"
+      }
+    ]
+  },
+
+  "feature_projects": [
+    {
+      "title": "Face Recognition System",
+      "icon": "images/ai.png",
+      "link": "https://example.com/face-recognition",
+      "image": "images/face.jpeg"
+    }
+  ]
+}
+
+]

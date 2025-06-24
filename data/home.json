@@ -1,0 +1,50 @@
+{
+  "features": [
+    {
+      "feature_icon": "images/web/web.svg",
+      "feature_title": "Web Development",
+      "feature_description": "We Help companies craft captivating websites. Our Designs tell stories and guide users, from vision to actions",
+      "feature_image": "images/web/webdevelopment.png",
+      "feature_id": "web_development"
+    },
+    {
+      "feature_icon": "images/cyber/shield.svg",
+      "feature_title": "cybersecurity",
+      "feature_description": "We help businesses protect their digital assets with ethical hacking, account recovery, and secure monitoring tools",
+      "feature_image": "images/cyber.png",
+      "feature_id": "cybersecurity"
+    },
+    {
+  "feature_icon": "images/mobile/mobile.svg",
+  "feature_title": "Mobile App Development",
+  "feature_description": "We design and develop seamless Android apps tailored for performance, user experience, and business growth.",
+  "feature_image": "images/mobile/mobilelogo.png",
+  "feature_id": "mobile_app"
+},{
+  "feature_icon": "images/ai/ai.svg",
+  "feature_title": "AI applications",
+  "feature_description": "We develop intelligent systems that automate tasks, predict outcomes, and deliver smart insights using modern AI/ML technologies.",
+  "feature_image": "images/ai/aii.png",
+  "feature_id": "ai_ml"
+}
+
+
+  ],
+    "statistics": [
+        {
+            "stats_title": "websites & Apps developed",
+            "stats_value": "25",
+            "stats_description": "Built with modern, responsive tech stacks"
+        },
+        {
+            "stats_title": "Cybersecurity Projects",
+            "stats_value": "15",
+            "stats_description": "Network/Web pentests, account recoveries"
+        },
+        {
+            "stats_title": "Tools & Scripts Developed",
+            "stats_value": "10",
+            "stats_description": "Automation tools, scanners & open-source utilities"
+        }
+    ]
+}
