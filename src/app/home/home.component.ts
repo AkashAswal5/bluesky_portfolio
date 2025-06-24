@@ -39,6 +39,21 @@ export class HomeComponent implements OnInit {
       }, 100);
     }
   }
+
+  scrollto(id:string){
+    const element = document.getElementById(id);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    } else {
+      console.warn(`Element with ID "${id}" not found.`);
+    }
+  }
 }
 
 

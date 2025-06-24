@@ -14,30 +14,31 @@
         BlueSky delivers cutting-edge AI solutions, secure web testing, stunning app/web development, and elite cybersecurity services — all under one roof.
       </p>
       <div class="space-x-4 mt-6">
-        <button class="bg-gradient-to-r from-blue-600 to-indigo-500 hover:from-blue-500 hover:to-indigo-400 text-white text-xs px-2 py-1 rounded-md transition duration-300 shadow-md hover:shadow-blue-400/50">
+        <div [routerLink]="['contact']" class="inline cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-500 hover:from-blue-500 hover:to-indigo-400 text-white text-xs px-2 py-1 rounded-md transition duration-300 shadow-md hover:shadow-blue-400/50">
           CONTACT US
-        </button>
-        <button class="border border-white/0 hover:border-white text-white text-xs px-2 py-1 rounded-md transition duration-300 hover:bg-white hover:text-black">
+        </div>
+        <div (click)="scrollto('features')" class="inline cursor-pointer border border-white/0 hover:border-white text-white text-xs px-2 py-1 rounded-md transition duration-300 hover:bg-white hover:text-black">
           GET STARTED &gt;
-        </button>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Features section  -->
-<section id="features" class="text-white flex flex-col justify-center items-center overflow-hidden p-5 sm:p-0">
+<section id="features" class="text-white flex flex-col justify-center items-center overflow-hidden p-5 sm:p-0 md:p-10">
   <h2 class="text-3xl font-roboto text-center font-light text-white/20 mb-12">
     [Services we Provide]
   </h2>
-  <div class="relative w-full max-w-6xl flex flex-wrap gap-10 mb-10 overflow-hidden cursor-pointer hover:saturate-120 transition-all duration-100">
-    <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-full max-w-md blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
-    <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
-    <div class="absolute -z-10 bottom-10 sm:left-10 rounded-full m-0 p-0 h-80 w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#499eff5b] to-blue-300/[0.6] animate-pulser"></div>
-
+  <div class="relative w-full max-w-6xl flex flex-wrap gap-10 mb-10 overflow-hidden">
+    
     <div class="w-full flex flex-col gap-10 overflow-hidden">
       @for (item of homepage_features; track $index) {
-        <div [routerLink]="['/features', item.feature_id]" class="relative flex flex-row gap-2 items-start bg-black/[0.5] border border-white/[0.1] backdrop-blur-xl p-5 rounded-md overflow-hidden shadow-lg transition-all">
+        <div [routerLink]="['/features', item.feature_id]" class=" backdrop-blur-lg relative flex flex-row gap-2 items-start bg-black/[0.5] border border-white/[0.1] p-5 rounded-md overflow-hidden shadow-lg transition-all cursor-pointer hover:saturate-120 duration-100">
+          <div class="absolute -z-10 -top-10 sm:left-10 rounded-t-full m-0 p-0 h-40 aspect-square w-full max-w-md blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165]/[0.6] animate-pulser"></div>
+          <div class="absolute -z-10 top-10 sm:right-60 rounded-full m-0 p-0 h-40 aspect-square w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900/[0.6] via-[#0759B9]/[0.6] to-blue-900/[0.6] animate-pulser"></div>
+          <div class="absolute -z-10 bottom-10 sm:left-40 rounded-full m-0 p-0 h-40 aspect-square w-full max-w-md blur-3xl bg-gradient-to-b from-purple-900/[0.6] via-[#499eff5b]/[0.6] to-blue-300/[0.6] animate-pulser"></div>
+
           <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:50px_50px] z-0 rounded-md"></div>
           <div class="absolute inset-0 bg-[linear-gradient(to_top,rgba(1,1,1,0.5)_1px,transparent)] z-10 pointer-events-none rounded-md"></div>
 
@@ -45,12 +46,12 @@
             <div class="flex flex-col justify-between pb-5">
               
               <div class="relative z-10 flex flex-row gap-2 items-center w-max border border-white/[0.1] text-white/80 backdrop-blur-xl p-1 pr-4 rounded-xl shadow-lg hover:scale-[1.01] transition-all">
-                <img [src]="item.feature_icon" class="h-8">
+                <img [src]="item.feature_icon" class="h-8 object">
                 <p class="font-roboto">{{item.feature_title}}</p>
               </div>
               <p class="absolute bottom-5 z-10 text-white text-sm max-w-xl font-techno">{{item.feature_description}}</p>
             </div>
-            <img [src]="item.feature_image" class="absolute right=0 sm:right-5 h-full sm:h-[85%] rounded-md aspect-video object-cover">
+            <img [src]="item.feature_image" class="absolute right-0 sm:right-5 h-full sm:h-[85%] rounded-md aspect-video object-contain">
           </div>
         </div>
       }
@@ -61,7 +62,7 @@
 
 
 <!-- stats section  -->
-<section class="flex items-center justify-center text-center font-roboto text-white overflow-hidden">
+<section class="flex items-center justify-center text-center font-roboto text-white overflow-hidden md:p-10">
   <div class="relative max-w-6xl backdrop-blur-2xl bg-black/[0.5] p-10 border-white/[0.1] border rounded-md overflow-hidden">
     <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 aspect-square max-w-md blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
     <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-30 aspect-square max-w-md blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>

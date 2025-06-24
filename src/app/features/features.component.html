@@ -21,11 +21,11 @@
   <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-10 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
   <div class="absolute -z-10 bottom-10 sm:right-40 rounded-full m-0 p-0 h-40 w-10 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
   
-  <div class="backdrop-blur-md bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-lg">
+  <div class="max-w-6xl backdrop-blur-md bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-lg">
     <div class="relative p-5 border-white/[0.1]">
       <div class="w-full">
         <div class="mb-5 flex items-center gap-2">
-          <img src="" alt="logo">p-0 md:p-10
+          <img src="logo.svg" class="h-6">
           {{data.feature_stack.title}}
         </div>
         <div class="text-xs text-gray-400 my-4">
@@ -50,35 +50,34 @@
 
 <!-- Feature Box Section -->
 <section class="relative sm:p-10 flex justify-center p-5 md:p-10">
-   <div class="z-10 max-w-6xl flex-1 flex flex-col">
+   <div class="z-10 max-w-6xl flex-1 flex flex-col gap-5">
       @for (item of data.feature_projects; track $index) {
-      <!-- <div class="bg-black/[0.5] hover:saturate-0 overflow-hidden backdrop-blur-lg border border-white/[0.1] rounded-lg relative aspect-video transition-all"> -->
-       <!-- <img [src]="item.image" class="object-contain"> -->
-       \n <div class="bg-black/[0.5] hover:saturate-0 overflow-hidden backdrop-blur-lg border border-white/[0.1] rounded-lg relative  transition-all">
+        <div class="bg-black/[0.5] hover:bg-black/[0.5] hover:saturate-90 overflow-hidden border border-white/[0.1] rounded-lg relative  transition-all">
        
-        <img [src]="item.image" class="object-contain w-full h-auto">
+          <img [src]="item.image" class="object-cover max-h-80 w-full">
 
-        <div class="absolute inset-0 bg-[radial-gradient(circle,transparent_40%,#00000050_100%)] transition-all"></div>
-        <a [href]="item.link"
-          class="absolute bottom-5 right-5 hover:scale-[0.98] w-max pr-2 flex items-center gap-2 font-techno text-sm text-red-700/[0.8] rounded-lg bg-white/[0.1] border border-black/[0.3] transition-all">
-          <img [src]="item.icon" class="h-8 w-8 m-1 bg-white/[0.4] object-cover rounded-md">
-          {{item.title}}
-        </a>
-      </div>
+          <div class="absolute  inset-0 bg-[radial-gradient(circle,transparent_40%,#00000050_100%)] transition-all"></div>
+          <a [href]="item.link"
+            class="absolute bottom-5 right-5 backdrop-blur-md hover:bg-white/[0.2] w-max pr-2 flex items-center gap-2 font-techno text-sm text-white/[0.8] rounded-lg bg-white/[0.1] border border-white/[0.3] transition-all">
+            <img [src]="item.icon" class="h-8 w-8 m-1 bg-white/[0.4] object-cover rounded-md">
+            {{item.title}}
+          </a>
+        </div>
       }
     </div>
 </section>
 
 
 <!-- Hero Section with Background Image -->
-<div class="relative flex justify-center items-center p-0 md:p-10 ">
-  <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-40 w-100 blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
-  <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-80 w-100 blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
-  
-  <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white">
-    <img src="logo.svg" class="h-12">
+<div class="relative flex justify-center items-center p-0 md:p-10">
+  <div class="absolute -z-10 -top-10 sm:left-40 rounded-t-full m-0 p-0 h-10 sm:h-80 aspect-square blur-3xl bg-gradient-to-b from-[#6B4165]/[0.6] via-[#1A1C36]/[0.6] to-[#6B4165] animate-pulser"></div>
+  <div class="absolute -z-10 top-10 sm:right-40 rounded-full m-0 p-0 h-10 sm:h-80 aspect-square blur-3xl bg-gradient-to-b from-purple-900 via-[#0759B9] to-blue-900 animate-pulser"></div>
+
+  <div class="absolute flex flex-wrap gap-2 justify-center items-center text-5xl text-white z-10">
+    <img src="logo.svg" class="h-12" />
     <span class="font-bold font-techno">Blue</span>
     <span class="font-code">Sky</span>
   </div>
-  <img src="images/home_nightsky.jpg" class="w-6xl h-60 md:h-64 object-cover md:rounded-md shadow shadow-black/[0.2]">
+
+  <img src="images/home_nightsky.jpg" class="w-6xl h-60 md:h-64 object-cover md:rounded-md shadow shadow-black/[0.2]" />
 </div>
