@@ -3,7 +3,7 @@
         "feature_id": "web_development",
         "title": "Web Development",
         "description": "We create powerful, modern websites that are lightning-fast, mobile-friendly, and built to convert. Whether you're a startup or an enterprise, we bring your digital vision to life.",
-        "mockup_image": "images/mockups/web-dev-showcase.png",
+        "mockup_image": "images/webdesign.png",
         "feature_stack": {
             "title": "Technology Stack",
             "description": "We leverage modern web technologies to ensure your site is responsive, accessible, SEO-friendly, and performance-optimized.",
@@ -22,11 +22,19 @@
                 },
                 {
                     "name": "Tailwind CSS",
-                    "icon": "icons/tailwind.svg"
+                    "icon": "icons/tailwindcss.svg"
                 },
                 {
                     "name": "Angular",
                     "icon": "icons/angular.svg"
+                },
+                {
+                    "name": "React",
+                    "icon": "icons/react.svg"
+                },
+                {
+                    "name": "Django",
+                    "icon": "icons/django.svg"
                 }
             ]
         },
@@ -34,59 +42,67 @@
             {
                 "title": "Startup Landing Page",
                 "icon": "icons/portfolio.svg",
-                "link": "https://cyber-sentinel-lyart.vercel.app/",
-                "image": "images/web1.png"
+                "link": "#",
+                "image": "images/portfolio.png"
+            },
+            {
+                "title": "Corporate Portfolio Website",
+                "icon": "icons/portfolio.svg",
+                "link": "#",
+                "image": "images/portfolio-preview.png"
             }
         ]
     },
     {
-  "feature_id": "cybersecurity",
-  "title": "Cybersecurity",
- "description": "We provide a comprehensive range of cybersecurity services to protect your digital assets: \n Penetration Testing to identify and exploit vulnerabilities\n- Vulnerability Scanning for network and web applications\n- Account Recovery and digital forensics support\n- Dark Web Monitoring to detect stolen data or credentials\n- Wi-Fi Network Auditing to secure wireless infrastructure\n- Endpoint Protection to secure client devices and systems.",
-  "mockup_image": "images/hacker.jpg",
-
-  "feature_stack": {
-    "title": "Security Tools & Expertise",
-    "description": "We use industry-standard tools and techniques to perform in-depth assessments of networks, websites, and endpoints. Our services include penetration testing, vulnerability assessments, and continuous threat monitoring.",
-    "stack_list": [
-      {
-        "name": "Nmap",
-        "icon": "icons/nmap.svg"
-      },
-      {
-        "name": "Burp Suite",
-        "icon": "icons/burpsuite.svg"
-      },
-      {
-        "name": "Wireshark",
-        "icon": "icons/wireshark.svg"
-      },
-      {
-        "name": "Metasploit",
-        "icon": "icons/metasploit.svg"
-      }
-    ]
-  },
-
-  "feature_projects": [
-    {
-      "title": "Vulnerability Scanner",
-      "icon": "icons/scanner.svg",
-      "link": "https://example.com/vulnerability-scanner",
-      "image": "images/vulnerability_scanning.jpg"
-    },
-    {
-      "title": "Dark Web Monitoring Dashboard",
-      "icon": "icons/darkweb.svg",
-      "link": "https://example.com/darkweb-monitoring",
-      "image": "images/darkweb-monitoring.jpg"
-    },
-    {
-      "title": "Account Recovery Suite",
-      "icon": "icons/account-recovery.svg",
-      "link": "https://example.com/account-recovery",
-      "image": "images/projects/account-recovery-preview.png"
+        "feature_id": "cybersecurity",
+        "title": "Cybersecurity",
+        "description": "We provide a comprehensive range of cybersecurity services to protect your digital assets: \n Penetration Testing to identify and exploit vulnerabilities\n- Vulnerability Scanning for network and web applications\n- Account Recovery and digital forensics support\n- Dark Web Monitoring to detect stolen data or credentials\n- Wi-Fi Network Auditing to secure wireless infrastructure\n- Endpoint Protection to secure client devices and systems.",
+        "mockup_image": "images/hacker.jpg",
+        "feature_stack": {
+            "title": "Security Tools & Expertise",
+            "description": "We use industry-standard tools and techniques to perform in-depth assessments of networks, websites, and endpoints. Our services include penetration testing, vulnerability assessments, and continuous threat monitoring.",
+            "stack_list": [
+                {
+                    "name": "Nmap",
+                    "icon": "images/nmap.png"
+                },
+                {
+                    "name": "Burp Suite",
+                    "icon": "images/BurpSuite.png"
+                },
+                {
+                    "name": "Wireshark",
+                    "icon": "images/Wireshark.png"
+                },
+                {
+                    "name": "Aircrack-ng",
+                    "icon": "images/Aircrack-ng.jpg"
+                },
+                {
+                    "name": "OSWAP ZAP",
+                    "icon": "images/zap.jpeg"
+                }
+            ]
+        },
+        "feature_projects": [
+            {
+                "title": "Vulnerability Scanner",
+                "icon": "icons/scanner.svg",
+                "link": "https://example.com/vulnerability-scanner",
+                "image": "images/vulnerability_scanning.jpg"
+            },
+            {
+                "title": "Dark Web Monitoring Dashboard",
+                "icon": "icons/darkweb.svg",
+                "link": "https://example.com/darkweb-monitoring",
+                "image": "images/darkweb.png"
+            },
+            {
+                "title": "Dark web Architecture",
+                "icon": "icons/account-recovery.svg",
+                "link": "https://example.com/account-recovery",
+                "image": "images/Dark_web_architecture.png"
+            }
+        ]
     }
-  ]
-}
 ]
