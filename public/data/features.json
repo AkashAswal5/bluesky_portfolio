@@ -3,7 +3,7 @@
         "feature_id": "web_development",
         "title": "Web Development",
         "description": "We create powerful, modern websites that are lightning-fast, mobile-friendly, and built to convert. Whether you're a startup or an enterprise, we bring your digital vision to life.",
-        "mockup_image": "images/webdesign.png",
+        "mockup_image": "images/web/webdevelopment.png",
         "feature_stack": {
             "title": "Technology Stack",
             "description": "We leverage modern web technologies to ensure your site is responsive, accessible, SEO-friendly, and performance-optimized.",
@@ -22,11 +22,11 @@
                 },
                 {
                     "name": "Tailwind CSS",
-                    "icon": "icons/tailwindcss.svg"
+                    "icon": "icons/Tailwind.png"
                 },
                 {
                     "name": "Angular",
-                    "icon": "icons/angular.svg"
+                    "icon": "icons/Angular.png"
                 },
                 {
                     "name": "React",
@@ -39,18 +39,30 @@
             ]
         },
         "feature_projects": [
-            {
-                "title": "Startup Landing Page",
-                "icon": "icons/portfolio.svg",
-                "link": "#",
-                "image": "images/portfolio.png"
-            },
-            {
-                "title": "Corporate Portfolio Website",
-                "icon": "icons/portfolio.svg",
-                "link": "#",
-                "image": "images/portfolio-preview.png"
-            }
+          {
+            "title": "Portfolio",
+            "icon": "images/web/dot.svg",
+            "link": "https://se00n00.github.io/My_Portfolio/",
+            "image": "images/web.png"
+          },
+          {
+            "title": "Personal Blog",
+            "icon": "images/web/white.png",
+            "link": "https://se00n00.github.io/Personal-Blog/",
+            "image": "images/web/blogs.png"
+          },
+          {
+            "title": "Startup Landing Page",
+            "icon": "icons/portfolio.svg",
+            "link": "#",
+            "image": "images/portfolio.png"
+          },
+          {
+            "title": "Corporate Portfolio Website",
+            "icon": "icons/portfolio.svg",
+            "link": "#",
+            "image": "images/portfolio-preview.png"
+          }
         ]
     },
     {
@@ -136,10 +148,10 @@
 
   "feature_projects": [
     {
-      "title": "Delivery Tracking App",
+      "title": "Delivery App",
       "icon": "images/mobile.png",
       "link": "https://example.com/delivery-app",
-      "image": "images/delivery-preview.png"
+      "image": "images/mobile/devliveryapp.webp"
     },
     {
       "title": "E-Commerce App",
@@ -152,7 +164,7 @@
   "feature_id": "ai_ml",
   "title": "AI & ML Solutions",
   "description": "We provide custom AI & ML development services to automate tasks, improve decision-making, and enhance customer experience.",
-  "mockup_image": "images/aiml1.jpg",
+  "mockup_image": "images/ai/aiml1.png",
 
   "feature_stack": {
     "title": "Technology Stack",
