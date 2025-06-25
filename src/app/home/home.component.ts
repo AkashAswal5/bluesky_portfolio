@@ -3,6 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
+interface BlobStyle {
+  bottom: string;
+  left: string;
+  background: string;
+  animationDelay: string;
+}
+
 @Component({
   selector: 'app-home',
   imports: [CommonModule, RouterLink],
@@ -15,8 +22,24 @@ export class HomeComponent implements OnInit {
   homepage_features:any[] = []
   homepage_statistics:any[] = []
   displayCounts: number[] = [];
-  constructor(private http: HttpClient) {}
-  
+  blobs: BlobStyle[] = [];
+  constructor(private http: HttpClient) {
+    this.generateBlobs(2);
+  }
+  generateBlobs(count: number) {
+    for (let i = 0; i < count; i++) {
+      this.blobs.push({
+        bottom: `${10 + Math.random() * 100}px`,
+        left: `${10 + Math.random() * 1000}px`,
+        background: `linear-gradient(to bottom,
+          rgba(147, 51, 234, 0.7),
+          rgba(14, 165, 233, 0.7),
+          rgba(37, 99, 235, 0.7))`,
+        animationDelay: `${(Math.random() * 3).toFixed(2)}s`
+      });
+    }
+  }
+
   ngOnInit(): void {
     this.http.get<any>('data/home.json').subscribe((data) => {
       this.homepage_features = data.features;
