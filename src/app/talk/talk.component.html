@@ -1,12 +1,23 @@
 <section class="relative contact-section font-roboto min-h-[85vh] text-white flex items-center justify-center p-6">
   
+  <div class="fixed z-10" [ngClass]="messageclass" >
+    <div class="backdrop-blur-sm p-4 flex flex-col gap-5 items-center text-white border-1 border-white/[0.1] rounded-md">
+      <div class="flex flex-row gap-5 items-center">
+        <img src="message.svg" class="h-10">
+        <span>Message Sent!</span>
+      </div>
+      <span class="text-xs text-white/[0.3]">Redirecting You to Home in {{redirectedTime()}}</span>
+    </div>
+    
+  </div>
+  
   <div class="backdrop-blur-3xl bg-black/[0.5] relative flex flex-col md:flex-row border-1 border-white/[0.1] rounded-xl">
     <div class="absolute opacity-100 -z-10 top-10 sm:right-0 rounded-t-full m-0 p-0 h-100 w-10 blur-3xl bg-gradient-to-b from-purple-900/[0.6] via-purple-800/[0.6] to-blue-900/[0.6]"></div>
     <div class="absolute opacity-90 -z-10 -top-0 sm:left-0 rounded-t-full m-0 p-0 h-40 w-10 md:w-100 blur-3xl bg-gradient-to-b from-blue-400/[0.6] via-blue-700/[0.6] to-blue-900"></div>
 
     <div class="md:max-w-[40vw] lg:max-w-[20vw] relative flex-[0.5] p-5 border-r border-white/[0.1] flex flex-col justify-between">
-      <div class="">
-        <div class="mb-5 flex items-start gap-2">
+      <div >
+        <div class="mb-5 flex items-start gap-2 cursor-pointer hover:opacity-70 transition-all" [routerLink]="['']">
           <img src="logo.svg" class="h-10">
           <p class="subtitle text-sm text-white mt-1">Bluesky</p>
         </div>
@@ -26,9 +37,10 @@
         <div class="flex gap-2 flex-wrap items-center">
           <img src="icons/time.svg" class="h-4 opacity-60">
           @for (item of times; track $index) {
-            <button type="submit"
-              class="bg-white/[0.2] text-xs text-black px-2 py-1 rounded-md transition duration-300 ease-in-out hover:bg-white hover:cursor-pointer self-start">
-              {{ item }}
+            <button (click)="addTime($index)"
+              class="text-xs text-black px-2 py-1 rounded-md transition duration-300 ease-in-out hover:bg-white hover:cursor-pointer self-start"
+              [ngClass]="(time_index()!= -1)&&$index == time_index()?['bg-white']:['bg-white/[0.2]']">
+              {{ item }} min
             </button>
           }
           
@@ -42,48 +54,54 @@
 
     <div class="flex-1 p-5 md:max-w-[40vw] lg:max-w-[30vw]">
       <!-- Form -->
-      <form class="flex flex-col gap-6 text-sm">
+      <form class="flex flex-col gap-6 text-sm" [formGroup]="meetingDetails" (ngSubmit)="submitForm()">
         <div>
           <label class="text-gray-300 font-semibold mb-2 block">Your Name*</label>
-          <input type="text" placeholder="John Doe" required
-            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
+          <input type="text" name="username" placeholder="John Doe" formControlName="username"
+            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" 
+            [ngClass]="meetingDetails?.get('username')?.invalid && (meetingDetails?.get('username')?.touched || this.formSubmitted )? ['border-red-400/[0.5]', 'bg-red-400/[0.1]','text-white']:[]"/>
         </div>
         <div>
           <label class="text-gray-300 font-semibold mb-2 block">Email*</label>
-          <input type="email" placeholder="you@example.com" required
-            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
+          <input type="email" name="email" placeholder="you@example.com" formControlName="email"
+            class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" 
+            [ngClass]="meetingDetails?.get('email')?.invalid && (meetingDetails?.get('email')?.touched || this.formSubmitted )? ['border-red-400/[0.5]', 'bg-red-400/[0.1]','text-white']:[]"/>
         </div>
 
         <div>
           <label class="text-gray-300 font-semibold mb-2 block">Company Name</label>
-          <input type="text" placeholder="Your company or website"
+          <input type="text" name="company" placeholder="Your company or website" formControlName="company"
             class="w-full px-4 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20" />
         </div>
 
         <div>
           <label class="text-gray-300 font-semibold mb-2 block">What’s on your mind?*</label>
-          <div class="flex flex-wrap gap-3 font-code font-light text-xs">
-            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Mobile App</span>
-            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Website</span>
-            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Desktop App</span>
-            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">Web Security</span>
-            <span class="px-2 py-1 rounded-md border border-gray-600 bg-gray-800 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black">AI Application</span>
+          <div class="flex flex-wrap gap-3 text-xs">
+            @for (service of services; track $index) {
+              <span (click)="addService($index)" class="text-xs text-black px-2 py-1 rounded-md transition duration-300 ease-in-out hover:bg-white hover:cursor-pointer self-start"
+              [ngClass]="[
+                  service_index() !== -1 && $index === service_index() ? 'bg-white' : 'bg-white/[0.2]'
+                ]"
+              >{{service}}</span>
+            }
+            
           </div>
         </div>
 
         <div>
-          <label class="text-gray-300 font-semibold mb-2 block">Message</label>
-          <textarea rows="2" placeholder="Write your message here..."
-            class="w-full px-2 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20"></textarea>
+          <label class="text-gray-300 font-semibold mb-2 block">Message*</label>
+          <textarea rows="2" name="textmessage" placeholder="Write your message here..." formControlName="message"
+            class="w-full px-2 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20"
+            [ngClass]="meetingDetails?.get('message')?.invalid && (meetingDetails?.get('message')?.touched || this.formSubmitted )? ['border-red-400/[0.5]', 'bg-red-400/[0.1]','text-white']:[]"></textarea>
         </div>
 
         <div class="flex justify-end gap-2">
-          <button [routerLink]="['']" type="submit"
-            class="cursor-pointer text-xs text-white px-3 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-[1.02] self-start">
-            Go Back
+          <button type="reset"
+            class="cursor-pointer text-xs text-white hover:bg-white hover:text-black px-3 py-2 rounded-md transition duration-300 ease-in-out transform self-start">
+            Reset
           </button>
           <button type="submit"
-            class="cursor-pointer bg-blue-400 text-xs text-black px-3 py-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-500  transform hover:scale-[1.02] self-start">
+            class="cursor-pointer bg-blue-400 text-xs text-black px-3 py-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-500  transform hover:text-white self-start">
             Let's have a meet ->
           </button>
         </div>
