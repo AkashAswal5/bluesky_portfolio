@@ -90,7 +90,7 @@
 
         <div>
           <label class="text-gray-300 font-semibold mb-2 block">Message*</label>
-          <textarea rows="2" name="textmessage" placeholder="Write your message here..." formControlName="message"
+          <textarea rows="2" name="textmessage" [placeholder]="meetingDetails?.get('message')?.invalid && (meetingDetails?.get('message')?.touched || this.formSubmitted )? 'Write in Min-20 and Max-100 Characters':'Write Your Message here ...'"  formControlName="message"
             class="w-full px-2 py-2 bg-black border border-gray-600 rounded-md outline-none text-xs font-code placeholder-gray-500 text-white focus:border-white focus:ring-0 focus-visible:ring-2 focus-visible:ring-white/20"
             [ngClass]="meetingDetails?.get('message')?.invalid && (meetingDetails?.get('message')?.touched || this.formSubmitted )? ['border-red-400/[0.5]', 'bg-red-400/[0.1]','text-white']:[]"></textarea>
         </div>

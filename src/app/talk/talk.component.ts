@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
@@ -12,16 +13,16 @@ import { Router } from '@angular/router';
 })
 export class TalkComponent {
   meetingDetails: any;
-  constructor(private formBuilder: FormBuilder, private router: Router){}
+  constructor(private http: HttpClient, private formBuilder: FormBuilder, private router: Router){}
 
   ngOnInit(): void {
     this.meetingDetails = this.formBuilder.group({
-      date: Date(),
+      date: [new Date().toISOString()],
       username: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       company: [''],
       service: [''],
-      message: ['', [Validators.required, Validators.min(20), Validators.max(100)]],
+      message: ['', [Validators.required, Validators.minLength(20), Validators.maxLength(100)]],
       total_time: [0],
     });
   }
@@ -42,6 +43,8 @@ export class TalkComponent {
   
   
   
+  API_URL = 'https://bluesky-portfolio-backend.onrender.com'; // Replace with your real endpoint
+
   formSubmitted = false;
   submitForm(): void {
     this.formSubmitted = true;
@@ -51,9 +54,26 @@ export class TalkComponent {
         service: this.services[this.service_index()]
       });
 
-      this.gotoHome()
-      console.log('Form data:', this.meetingDetails.value);
+      this.postToAPI()
     }
+  }
+
+  postToAPI(){
+    const formData = this.meetingDetails.value;
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    this.http.post(this.API_URL, formData, { headers }).subscribe({
+      next: (response) => {
+        console.log('Form submitted successfully:');
+        this.gotoHome();
+      },
+      error: (error) => {
+        console.error('Form submission error:', error);
+      }
+    });
   }
 
   redirectedTime = signal(5)
